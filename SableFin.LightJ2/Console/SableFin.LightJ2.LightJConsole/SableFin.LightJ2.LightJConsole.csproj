@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{C286ECA1-1B03-4B4A-8AF8-223DEE05027B}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SableFin.LightJ2.LightJConsole</RootNamespace>
+    <AssemblyName>SableFin.LightJ2.LightJConsole</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>SableFin.LightJ2.LightJConsole_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PackageCertificateThumbprint>2E4AEDF84CD1643C72914F3F7EC65AA9DAD1B75A</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Fonts\22805_LcdD.ttf" />
+    <Content Include="Graphics\color_wheel_HSV.png" />
+    <Content Include="Themes\Default\SliderHorizontalThumb.png" />
+    <Content Include="Themes\Default\SliderVerticalThumb.png" />
+    <None Include="SurfaceControls\_documentation.txt" />
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Fixture.cs" />
+    <Compile Include="DataModel\FixtureDatabase.cs" />
+    <Compile Include="DataModel\FixtureInput.cs" />
+    <Compile Include="DataModel\FixturePreset.cs" />
+    <Compile Include="DataModel\FixturePresetSet.cs" />
+    <Compile Include="DataModel\InputRange.cs" />
+    <Compile Include="DataModel\LoaderFixture.cs" />
+    <Compile Include="DataModel\LoaderFixtureDatabase.cs" />
+    <Compile Include="DataModel\LoaderFixtureInput.cs" />
+    <Compile Include="DataModel\LoaderFixturePreset.cs" />
+    <Compile Include="DataModel\LoaderInputRange.cs" />
+    <Compile Include="DataModel\RangeTypeEnum.cs" />
+    <Compile Include="DmxGenerators\CosinusDmxGenerator.cs" />
+    <Compile Include="DmxGenerators\RandomPerBeatGenerator.cs" />
+    <Compile Include="DmxGenerators\SequencePlayer.cs" />
+    <Compile Include="DmxGenerators\SinusDmxGenerator.cs" />
+    <Compile Include="SimpleArtnet\ArtNetDmxSender.cs" />
+    <Compile Include="SimpleArtnet\ArtNetDmxTarget.cs" />
+    <Compile Include="SimpleArtnet\ArtNetPoller.cs" />
+    <Compile Include="SimpleArtnet\Device.cs" />
+    <Compile Include="SimpleArtnet\Packet\ArtPollReplyPort.cs" />
+    <Compile Include="SimpleArtnet\Packet\PacketParser.cs" />
+    <Compile Include="SimpleArtnet\Packet\ArtNetDmx.cs" />
+    <Compile Include="SimpleArtnet\Packet\ArtNetFormatExtension.cs" />
+    <Compile Include="SimpleArtnet\Packet\ArtNetOemCodes.cs" />
+    <Compile Include="SimpleArtnet\Packet\ArtNetOpCode.cs" />
+    <Compile Include="SimpleArtnet\Packet\ArtNetPacket.cs" />
+    <Compile Include="SimpleArtnet\Packet\ArtPoll.cs" />
+    <Compile Include="SimpleArtnet\Packet\ArtPollReply.cs" />
+    <Compile Include="SimpleArtnet\Packet\PacketBuilder.cs" />
+    <Compile Include="SimpleArtnet\SimpleArtNetEngine.cs" />
+    <Compile Include="SimpleArtnet\PortAddress.cs" />
+    <Compile Include="SimpleArtnet\Universe.cs" />
+    <Compile Include="SurfaceControls\BindingReverserButton.xaml.cs">
+      <DependentUpon>BindingReverserButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SurfaceControls\ColorSelector.xaml.cs">
+      <DependentUpon>ColorSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SurfaceControls\SurfaceControl.cs" />
+    <Compile Include="SurfaceFramework\ITimerDmxGenerator.cs.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Network\DebugDmxServiceProxy.cs" />
+    <Compile Include="Network\DmxServiceProxy.cs" />
+    <Compile Include="Network\DmxServiceProxyFactory.cs" />
+    <Compile Include="Network\LighJOpenDmxAgentServiceProxy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SurfaceControls\Joystick.xaml.cs" />
+    <Compile Include="SurfaceControls\LcdDisplay.xaml.cs" />
+    <Compile Include="SurfaceControls\OnOffButton.xaml.cs" />
+    <Compile Include="SurfaceControls\PushButton.xaml.cs" />
+    <Compile Include="SurfaceControls\TouchBpmArea.xaml.cs" />
+    <Compile Include="SurfaceControls\VerticalSlider.xaml.cs" />
+    <Compile Include="SurfaceFramework\DmxBinding.cs" />
+    <Compile Include="SurfaceFramework\FastRoutingFrame.cs" />
+    <Compile Include="SurfaceFramework\FastRoutingMatrix.cs" />
+    <Compile Include="SurfaceFramework\FixtureReference.cs" />
+    <Compile Include="SurfaceFramework\OnOffSurfaceItem.cs" />
+    <Compile Include="SurfaceFramework\PushSurfaceItem.cs" />
+    <Compile Include="SurfaceFramework\SliderSurfaceItem.cs" />
+    <Compile Include="SurfaceFramework\SurfaceItem.cs" />
+    <Compile Include="SurfaceFramework\TimeDmxClockEngine.cs" />
+    <Compile Include="SurfaceFramework\ValueReverserSurfaceItem.cs" />
+    <Compile Include="XamlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="SableFin.LightJ2.LightJConsole_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\ConsoleSurfaceDefinition.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\DmxBinding\TestBarbarel.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\FixturesDatabase.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\LaserPattern\00.png" />
+    <Content Include="Data\LaserPattern\01.png" />
+    <Content Include="Data\LaserPattern\02.png" />
+    <Content Include="Data\LaserPattern\03.png" />
+    <Content Include="Data\LaserPattern\04.png" />
+    <Content Include="Data\LaserPattern\05.png" />
+    <Content Include="Data\LaserPattern\06.png" />
+    <Content Include="Data\LaserPattern\07.png" />
+    <Content Include="Data\LaserPattern\08.png" />
+    <Content Include="Data\LaserPattern\09.png" />
+    <Content Include="Data\LaserPattern\10.png" />
+    <Content Include="Data\LaserPattern\11.png" />
+    <Content Include="Data\LaserPattern\12.png" />
+    <Content Include="Data\LaserPattern\13.png" />
+    <Content Include="Data\LaserPattern\14.png" />
+    <Content Include="Data\LaserPattern\15.png" />
+    <Content Include="Data\LaserPattern\16.png" />
+    <Content Include="Data\LaserPattern\17.png" />
+    <Content Include="Data\LaserPattern\18.png" />
+    <Content Include="Data\LaserPattern\19.png" />
+    <Content Include="Data\LaserPattern\20.png" />
+    <Content Include="Data\LaserPattern\21.png" />
+    <Content Include="Data\LaserPattern\22.png" />
+    <Content Include="Data\LaserPattern\23.png" />
+    <Content Include="Data\LaserPattern\24.png" />
+    <Content Include="Data\LaserPattern\25.png" />
+    <Content Include="Data\LaserPattern\26.png" />
+    <Content Include="Data\LaserPattern\27.png" />
+    <Content Include="Data\LaserPattern\28.png" />
+    <Content Include="Data\LaserPattern\29.png" />
+    <Content Include="Data\LaserPattern\30.png" />
+    <Content Include="Data\LaserPattern\31.png" />
+    <Content Include="Data\LaserPattern\BLACK.png" />
+    <Content Include="Data\LaserPattern\BLUE.png" />
+    <Content Include="Data\LaserPattern\GREEN.png" />
+    <Content Include="Data\LaserPattern\ORANGE.png" />
+    <Content Include="Data\LaserPattern\RED.png" />
+    <Content Include="Data\LaserPattern\ROSE.png" />
+    <Content Include="Data\LaserPattern\SOUND.png" />
+    <Content Include="Data\LaserPattern\VIOLET.png" />
+    <Content Include="Data\LaserPattern\WHITE.png" />
+    <Content Include="Data\LaserPattern\YELLOW.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Assets\Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LaserPatternResource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SurfaceControleStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="SurfaceControls\BindingReverserButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SurfaceControls\ColorSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SurfaceControls\Joystick.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SurfaceControls\LcdDisplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SurfaceControls\OnOffButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SurfaceControls\PushButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SurfaceControls\TouchBpmArea.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SurfaceControls\VerticalSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Default\LightJCustomStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Default\WinRt81LegacyBrushes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

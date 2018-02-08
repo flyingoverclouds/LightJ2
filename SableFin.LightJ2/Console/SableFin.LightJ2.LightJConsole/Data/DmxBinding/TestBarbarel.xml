@@ -1,0 +1,1987 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SetConfiguration unbindedControl="hidden|desactivated|visible" >
+  <Fixtures>
+    <!-- defini les équipements qui seront utilisé dans cette configuration-->
+    <Fixture id="par1"  name="Par36-left" ref-dbFixtureId="STAIRPAR36LED" dmxChannel="1"/>
+    <Fixture id="jelly1"  name="JellyFish" ref-dbFixtureId="ADJJELLYFISH3"  dmxChannel="17"/>
+    <Fixture id="laser1"  name="Laser" ref-dbFixtureId="STAIRDJLASE150RGYMKIII"  dmxChannel="33"/>
+    <Fixture id="mush1"  name="MushRoom" ref-dbFixtureId="IBIZAMUSHLED" dmxChannel="65"/>
+    <Fixture id="scan1" name="EzScan" ref-dbFixtureId="VarytecEasyScanXTMini" dmxChannel="97"/>
+    <Fixture id="lyre1" name="Lyre9" ref-dbFixtureId="LYRE7X15W-9CHANNEL" dmxChannel="110"/>
+    <Fixture id="lyre2" name="Lyre9" ref-dbFixtureId="LYRE7X15W-9CHANNEL" dmxChannel="120"/>
+    <Fixture id="strobe1" name="Strobe" ref-dbFixtureId="THOMANNLEDPOTSTROBE100-3CHAN" dmxChannel="150"/>
+
+  </Fixtures>
+  <Page ref-pageId="COMMONPAGE" name="">
+    <Push ref-id="commonPush2" name="MUSIC ALL" img="sound" comment="Tout en mode music auto">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="128"/>
+        <Binding ref-fixture="par1" inputNum="5" value="255"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="240"/>
+        <Binding ref-fixture="mush1" inputNum="9" value="140"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="120"/>
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="commonPush1" name="BlackOut" img="black" comment="OFF sur tout des devices">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+        <Binding ref-fixture="mush1" inputNum="9" value="220"/>
+
+        <Binding ref-fixture="scan1" inputNum="3" value="0"/>
+
+        <Binding ref-fixture="lyre1" inputNum="3" value="0"/>
+        <Binding ref-fixture="lyre2" inputNum="3" value="0"/>
+
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+       
+
+      </Output>
+    </Push>
+
+    <Push ref-id="commonPush3" name="FullWhite" img="white" comment="Full white sauf laser">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="255"/>
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+        <Binding ref-fixture="par1" inputNum="5" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="64"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+
+        <Binding ref-fixture="mush1" inputNum="9" value="220" comment="off"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="240" comment="off"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="0" comment="off"/>
+
+        <Binding ref-fixture="scan1" inputNum="5" value="255"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="8"/>
+        <Binding ref-fixture="scan1" inputNum="4" value="0"/>
+
+        <Binding ref-fixture="lyre1" inputNum="3" value="240"/>
+        <Binding ref-fixture="lyre1" inputNum="4" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="5" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="6" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="7" value="255"/>
+
+
+        <Binding ref-fixture="strobe1" inputNum="1" value="255"/>
+        <Binding ref-fixture="strobe1" inputNum="2" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="3" value="0"/>
+
+
+
+      </Output>
+    </Push>
+
+    <Push ref-id="commonPush4" name="Full RED" img="red" comment="Full rouge">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+        <Binding ref-fixture="par1" inputNum="5" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="16"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="180"/>
+        <Binding ref-fixture="mush1" inputNum="9" value="160"/>
+
+        <Binding ref-fixture="scan1" inputNum="5" value="255"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="8"/>
+        <Binding ref-fixture="scan1" inputNum="4" value="15"/>
+
+        <Binding ref-fixture="lyre1" inputNum="3" value="240"/>
+        <Binding ref-fixture="lyre1" inputNum="4" value="255"/>
+        <Binding ref-fixture="lyre1" inputNum="5" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="6" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="7" value="0"/>
+
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+
+      </Output>
+    </Push>
+
+    <Push ref-id="commonPush5" name="Full GREEN"  img="green" comment="Full vert">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="255"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+        <Binding ref-fixture="par1" inputNum="5" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="32"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="150"/>
+        <Binding ref-fixture="mush1" inputNum="9" value="180"/>
+
+        <Binding ref-fixture="scan1" inputNum="5" value="255"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="8"/>
+        <Binding ref-fixture="scan1" inputNum="4" value="22"/>
+
+        <Binding ref-fixture="lyre1" inputNum="3" value="240"/>
+        <Binding ref-fixture="lyre1" inputNum="4" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="5" value="255"/>
+        <Binding ref-fixture="lyre1" inputNum="6" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="7" value="0"/>
+
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+
+      </Output>
+    </Push>
+
+
+
+
+    <Push ref-id="commonPush6" name="Flash WHITE" img="white" comment="flash white sauf laser">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="255"/>
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+        <Binding ref-fixture="par1" inputNum="5" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="64"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+
+        <Binding ref-fixture="mush1" inputNum="9" value="220" comment="off"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="240" comment="off"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="0" comment="off"/>
+
+        <Binding ref-fixture="scan1" inputNum="5" value="255"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="8"/>
+        <Binding ref-fixture="scan1" inputNum="4" value="0"/>
+
+        <Binding ref-fixture="lyre1" inputNum="3" value="240"/>
+        <Binding ref-fixture="lyre1" inputNum="4" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="5" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="6" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="7" value="255"/>
+
+
+        <Binding ref-fixture="strobe1" inputNum="1" value="255"/>
+        <Binding ref-fixture="strobe1" inputNum="2" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="3" value="0"/>
+
+
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+        <Binding ref-fixture="mush1" inputNum="9" value="220"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="3" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="2" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="commonPush7" name="Flash RED" img="red" comment="flash rouge">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+        <Binding ref-fixture="par1" inputNum="5" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="16"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="180"/>
+        <Binding ref-fixture="mush1" inputNum="9" value="160"/>
+
+        <Binding ref-fixture="scan1" inputNum="5" value="255"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="8"/>
+        <Binding ref-fixture="scan1" inputNum="4" value="15"/>
+
+        <Binding ref-fixture="lyre1" inputNum="3" value="240"/>
+        <Binding ref-fixture="lyre1" inputNum="4" value="255"/>
+        <Binding ref-fixture="lyre1" inputNum="5" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="6" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="7" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+        <Binding ref-fixture="mush1" inputNum="9" value="220"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="commonPush8" name="Flash GREEN"  img="green" comment="flash vert">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="255"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+        <Binding ref-fixture="par1" inputNum="5" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="32"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="150"/>
+        <Binding ref-fixture="mush1" inputNum="9" value="180"/>
+
+
+        <Binding ref-fixture="scan1" inputNum="5" value="255"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="8"/>
+        <Binding ref-fixture="scan1" inputNum="4" value="22"/>
+
+        <Binding ref-fixture="lyre1" inputNum="3" value="240"/>
+        <Binding ref-fixture="lyre1" inputNum="4" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="5" value="255"/>
+        <Binding ref-fixture="lyre1" inputNum="6" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="7" value="0"/>
+
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+        <Binding ref-fixture="mush1" inputNum="9" value="220"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="3" value="0"/>
+
+
+      </Output>
+    </Push>
+
+
+    <Push ref-id="commonPush9" name="Flash BLUE"  img="blue" comment="flash blue sauf laser">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+        <Binding ref-fixture="par1" inputNum="5" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="48"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+
+
+        <Binding ref-fixture="mush1" inputNum="9" value="220" comment="off"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="240" comment="off"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="0" comment="off"/>
+
+        <Binding ref-fixture="scan1" inputNum="5" value="255"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="8"/>
+        <Binding ref-fixture="scan1" inputNum="4" value="29"/>
+
+        <Binding ref-fixture="lyre1" inputNum="3" value="240"/>
+        <Binding ref-fixture="lyre1" inputNum="4" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="5" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="6" value="255"/>
+        <Binding ref-fixture="lyre1" inputNum="7" value="0"/>
+
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+        <Binding ref-fixture="mush1" inputNum="9" value="220"/>
+        <Binding ref-fixture="scan1" inputNum="3" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="3" value="0"/>
+
+      </Output>
+
+    </Push>
+
+
+
+
+
+  </Page>
+  
+  
+  <Page ref-pageId="PMAIN" name="Main">
+    <OnOff ref-id="main_onoff_par1" name="PAR" comment="ON/OFF sur par12">
+      <Output state="ON">
+        <Binding ref-fixture="par1" inputNum="1" value="128" comment="Par change 7"/>
+      </Output>
+      <Output state="OFF">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </OnOff>
+
+    <OnOff ref-id="main_onoff_jelly1" name="JELLY" comment="ON/OFF sur jelly1">
+      <Output state="ON">
+        <Binding ref-fixture="jelly1" inputNum="1" value="240"/>
+      </Output>
+      <Output state="OFF">
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+      </Output>
+    </OnOff>
+
+    <OnOff ref-id="main_onoff_laser1" name="LASER" comment="ON/OFF sur laser1">
+      <Output state="ON">
+        <Binding ref-fixture="laser1" inputNum="1" value="120"/>
+      </Output>
+      <Output state="OFF">
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+      </Output>
+    </OnOff>
+
+    <OnOff ref-id="main_onoff_ezscan1" name="SCAN" comment="ON/OFF sur EZScan">
+      <Output state="ON">
+        <Binding ref-fixture="scan1" inputNum="3" value="8"/>
+      </Output>
+      <Output state="OFF">
+        <Binding ref-fixture="scan1" inputNum="3" value="0"/>
+      </Output>
+    </OnOff>
+
+
+    <OnOff ref-id="main_onoff_mush1" name="MUSH" comment="ON/OFF sur mush1">
+      <Output state="ON">
+        <Binding ref-fixture="mush1" inputNum="9" value="140"/>
+      </Output>
+      <Output state="OFF">
+        <Binding ref-fixture="mush1" inputNum="9" value="220"/>
+      </Output>
+    </OnOff>
+
+    <OnOff ref-id="main_onoff_lyres" name="Lyres" >
+      <Output state="PRESS">
+        <Binding ref-fixture="strobe1" inputNum="1" value="255"/>
+        <Binding ref-fixture="strobe1" inputNum="2" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="3" value="232"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="2" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="3" value="0"/>
+      </Output>
+    </OnOff>
+
+
+    <OnOff ref-id="main_onoff_strobe" name="Strobe" >
+      <Output state="ON">
+        <Binding ref-fixture="strobe1" inputNum="1" value="255"/>
+        <Binding ref-fixture="strobe1" inputNum="2" value="124"/>
+        <Binding ref-fixture="strobe1" inputNum="3" value="247"/>
+      </Output>
+      <Output state="OFF">
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="2" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="3" value="0"/>
+      </Output>
+    </OnOff>
+
+
+    <Push ref-id="main_par1_off" name="OFF" img="black" >
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="main_par1_sound" name="Fade/7" img="sound">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="64"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_par1_chase" name="Change/7" img="sound">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="128"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="main_par1_flashR" name="Flash" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_par1_flashG" name="Flash" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="255"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_par1_flashB" name="Flash" img="blue">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="main_par1_flashW" name="Flash" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="255"/>
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+
+      </Output>
+    </Push>
+    <Push ref-id="main_par1_flashY" name="Flash" img="yellow">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_par1_flashO" name="Flash ORANGE" img="orange">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="128"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="main_par1_flashV" name="Flash VIOLET" img="violet">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="128"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+
+
+
+
+    <Push ref-id="main_par1_flashROSE" name="Flash ROSE" img="rose">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+    <Slider ref-id="main_par1_speed" name="Speed" ref-minmaxfixture="par1" ref-minmaxrange="5.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="par1" inputNum="5"/>
+      </Output>
+    </Slider>
+
+
+
+
+    <Slider ref-id="main_jelly1_speed" name="Speed" ref-minmaxfixture="jelly1" ref-minmaxrange="3.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="jelly1" inputNum="3"/>
+      </Output>
+    </Slider>
+    <Push ref-id="main_jelly1_off" name="OFF" img="black" >
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_jelly1_sound" name="Sound" img="sound">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="240"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_jelly1_chase" name="Chase">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_jelly1_flashR" name="Flash R" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="16"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_jelly1_flashG" name="Flash G" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="32"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_jelly1_flashB" name="Flash B" img="blue">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="48"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_jelly1_flashW" name="Flash W" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="64"/>
+        <Binding ref-fixture="jelly1" inputNum="3" value="0"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+      </Output>
+    </Push>
+
+
+    <Push ref-id="main_laser1_off" name="OFF" img="black" >
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_laser1_sound" name="Sound 3col" img="sound">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="1" value="120"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_laser1_flashR" name="FLASH" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="50"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_laser1_flashG" name="FLASH" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="75"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_laser1_flashY" name="FLASH" img="yellow">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+        <Binding ref-fixture="laser1" inputNum="3" value="100"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_laser1_mix" name="COL AUTO">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="225"/>
+      </Output>
+    </Push>
+
+    <Slider ref-id="main_laser1_speed" name="SPEED" ref-minmaxfixture="laser1" ref-minmaxrange="4">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="laser1" inputNum="4"/>
+      </Output>
+    </Slider>
+
+    <Joystick ref-id="main_ezscan_joystick" name="Move">
+      <PanOutput ref-minmaxfixture="scan1" ref-minmaxrange="1.1" >
+        <Binding ref-fixture="scan1" inputNum="1"/>
+      </PanOutput>
+      <TiltOutput ref-minmaxfixture="scan1" ref-minmaxrange="2.1" >
+        <Binding ref-fixture="scan1" inputNum="2"/>
+      </TiltOutput>
+    </Joystick>
+    <Slider ref-id="main_ezscan_sliderGobo" name="Gobo Change Spd"  ref-minmaxfixture="scan1" ref-minmaxrange="4.19">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="scan1" inputNum="4"/>
+      </Output>
+    </Slider>
+
+
+
+    <Push ref-id="main_ezscan_gobo1" name="Orange" img="orange">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="8"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="main_ezscan_gobo2" name="Red" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="15"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_ezscan_gobo3" name="Green" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="22"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_ezscan_gobo4" name="Blue" img="blue">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="29"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_ezscan_gobo5" name="RVB">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="36"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="main_ezscan_gobo6" name="Violet" img="violet">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="43"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="main_ezscan_gobo7" name="Cyan" >
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="50"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="main_ezscan_gobo8" name="RedBlue">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="57"/>
+      </Output>
+    </Push>
+
+
+    <Push ref-id="main_ezscan_goboO" name="White" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="main_ezscan_blackout" name="Blackout" img="black">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="main_ezscan_open" name="Full light" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="8"/>
+      </Output>
+    </Push>
+
+
+  </Page>
+
+
+  <!-- ********************************************************************************************** PAR36 *** -->
+
+  <Page ref-pageId="PPAR" name="Par36 LED" >
+
+
+
+    <Slider ref-id="par_mode" name="MODE">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="par1" inputNum="1"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="par_red" name="RED" img="red" ref-minmaxfixture="par1" ref-minmaxrange="2.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="par1" inputNum="2"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="par_green" name="GREEN" img="green" ref-minmaxfixture="par1" ref-minmaxrange="3.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="par1" inputNum="3"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="par_blue" name="BLUE" img="blue" ref-minmaxfixture="par1" ref-minmaxrange="4.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="par1" inputNum="4"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="par_speed" name="Speed" ref-minmaxfixture="par1" ref-minmaxrange="5.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="par1" inputNum="5"/>
+      </Output>
+    </Slider>
+
+    <Push ref-id="par_mode1" name="RGB">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="par_mode2" name="Fade/7">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="64"/>
+      </Output>
+    </Push>
+    <Push ref-id="par_mode3" name="Change/7">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="128"/>
+      </Output>
+    </Push>
+    <Push ref-id="par_mode4" name="Change/3">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="1" value="192"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="par_color1" name="100%" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="255"/>
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+      </Output>
+    </Push>
+    <Push ref-id="par_color4" name="100%" img="yellow">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="255"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="par_color5" name="Flash" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="255"/>
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="par_color6" name="Flash" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="par_color7" name="Flash" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="3" value="255"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="par_color8" name="Flash" img="blue">
+      <Output state="PRESS">
+        <Binding ref-fixture="par1" inputNum="4" value="255"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+
+
+
+  </Page>
+
+  <!-- ********************************************************************************************** JELLY *** -->
+
+  <Page ref-pageId="PJELLY" name="Jelly Fish">
+
+    <Slider ref-id="jelly_strobe" name="Speed" ref-minmaxfixture="jelly1" ref-minmaxrange="3.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="jelly1" inputNum="3"/>
+      </Output>
+    </Slider>
+
+    <Push ref-id="jelly_mode1" name="OFF">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_mode2" name="Color">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_mode3" name="Chase">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_mode4" name="" img="sound">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="240"/>
+      </Output>
+    </Push>
+    <!-- DEFINITION DES COLORS ***************************************  -->
+
+    <Push ref-id="jelly_color0" name="OFF" img="black">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color1" name="" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="16"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color2" name="" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="32"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color3" name="" img="blue">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="48"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color4" name="WHITE" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="64"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color5" name="R/G">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="80"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color6" name="R/B">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="96"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color7" name="R/W">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="112"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color8" name="G/B">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="128"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color9" name="G/W">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="144"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color10" name="B/W">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="160"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color11" name="R/G/B">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="2" value="176"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color12" name="R/G/W">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="192"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color13" name="R/B/W">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="208"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color14" name="G/B/W">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="224"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_color15" name="ALL">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="10"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="240"/>
+      </Output>
+    </Push>
+
+
+    <Push ref-id="jelly_chase0" name="OFF">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase1" name="Chase 1">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="10"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase2" name="Chase 2">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="20"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase3" name="Chase 3">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="30"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase4" name="Chase 4">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="40"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase5" name="Chase 5">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="50"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase6" name="Chase 6">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="60"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase7" name="Chase 7">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="70"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase8" name="Chase 8">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="80"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase9" name="Chase 9">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="90"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase10" name="Chase 10">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="100"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase11" name="Chase 11">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="110"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase12" name="Chase 12">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="120"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase13" name="Chase 13">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="130"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase14" name="Chase 14">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="140"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase15" name="Chase 15">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="150"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase16" name="Chase 16">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="160"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase17" name="Chase 17">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="170"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase18" name="Chase 18">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="180"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase19" name="Chase 19">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="190"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase20" name="Chase 20">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="200"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase21" name="Chase 21">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="210"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase22" name="Chase 22">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="220"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase23" name="Chase 23">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="230"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase24" name="Chase 24">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="240"/>
+      </Output>
+    </Push>
+    <Push ref-id="jelly_chase25" name="Chase 25">
+      <Output state="PRESS">
+        <Binding ref-fixture="jelly1" inputNum="1" value="120"/>
+        <Binding ref-fixture="jelly1" inputNum="2" value="250"/>
+      </Output>
+    </Push>
+
+
+  </Page>
+
+  <!-- ********************************************************************************************** LASER *** -->
+
+  <Page ref-pageId="PLASER" name="Laser">
+
+
+    <!--<Slider ref-id="laser_sliderx" name="X">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="laser1" inputNum="6"/>
+      </Output>
+    </Slider>-->
+
+    <Slider ref-id="laser_slidery" name="Y" ref-minmaxfixture="laser1" ref-minmaxrange="7.1">
+      <Output state="Value" default="66">
+        <Binding ref-fixture="laser1" inputNum="7"/>
+      </Output>
+    </Slider>
+
+    <Slider ref-id="laser_sliderx" name="X" ref-minmaxfixture="laser1" ref-minmaxrange="6.1">
+      <Output state="Value" default="62">
+        <Binding ref-fixture="laser1" inputNum="6"/>
+      </Output>
+    </Slider>
+
+    <Slider ref-id="laser_sliderzoom" name="ZOOM" ref-minmaxfixture="laser1" ref-minmaxrange="5">
+      <Output state="Value" default="64">
+        <Binding ref-fixture="laser1" inputNum="5"/>
+      </Output>
+    </Slider>
+
+    <Slider ref-id="laser_slidercolor" name="Color Spd" ref-minmaxfixture="laser1" ref-minmaxrange="4">
+      <Output state="Value" default="64">
+        <Binding ref-fixture="laser1" inputNum="4"/>
+      </Output>
+    </Slider>
+    <Push ref-id="laser_mode0" name="DMX">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="240"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_mode1" name="Auto 3col">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_mode2" name="Auto GREEN" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="30"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_mode3" name="Auto RED" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="60"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_mode4" name="Auto YELLOW" img="yellow">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="90"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_mode5" name="Sound 3col">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="120"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_mode6" name="Sound GREEN" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="150"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_mode7" name="Sound RED" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="180"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_mode8" name="Sound YELLOW" img="yellow">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="1" value="210"/>
+      </Output>
+    </Push>
+
+
+
+
+    <Push ref-id="laser_colormode0" name="OFF">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_colormode1" name="MIX">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="25"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_colormode2" name="RED" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="50"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_colormode3" name="GREEN" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="75"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_colormode4" name="YELLOW" img="yellow">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="100"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_colormode5" name="R / G">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="125"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_colormode6" name=" G / Y" >
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="150"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_colormode7" name="R / Y">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="175"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_colormode8" name="R/G/Y">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="200"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_colormode9" name="AUTO CHG">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="3" value="225"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="laser_pattern1" name="" img="pattern00">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern2" name="" img="pattern01">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="8"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern3" name="" img="pattern02">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="16"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern4" name=""  img="pattern03">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="24"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern5" name=""  img="pattern04">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="32"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern6" name="" img="pattern05">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="40"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern7" name=""  img="pattern06">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="48"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern8" name="" img="pattern07">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="56"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern9" name="" img="pattern08">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="64"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern10" name="" img="pattern09">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="72"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="laser_pattern11" name="" img="pattern10">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="80"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern12" name="" img="pattern11">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="88"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern13" name="" img="pattern12">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="96"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern14" name="" img="pattern13">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="104"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern15" name="" img="pattern14">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="112"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern16" name="" img="pattern15">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="120"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern17" name="" img="pattern16">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="128"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern18" name="" img="pattern17">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="136"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern19" name="" img="pattern18">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="144"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern20" name="" img="pattern19">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="152"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="laser_pattern21" name="" img="pattern20">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="160"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern22" name="" img="pattern21">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="168"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern23" name="" img="pattern22">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="176"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern24" name="" img="pattern23">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="184"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern25" name="" img="pattern24">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="192"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern26" name="" img="pattern25">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="200"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern27" name="" img="pattern26">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="208"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern28" name="" img="pattern27">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="216"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern29" name="" img="pattern28">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="224"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern30" name="" img="pattern29">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="232"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="laser_pattern31" name="" img="pattern30">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="240"/>
+      </Output>
+    </Push>
+    <Push ref-id="laser_pattern32" name="" img="pattern31">
+      <Output state="PRESS">
+        <Binding ref-fixture="laser1" inputNum="2" value="248"/>
+      </Output>
+    </Push>
+  </Page>
+
+  <!-- ********************************************************************************************** MUSHROOM *** -->
+  <Page ref-pageId="PMUSH" name="MushRoom">
+    <Slider ref-id="mush_slider1" name="MotorFunc" ref-minmaxfixture="mush1" ref-minmaxrange="2.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="mush1" inputNum="1"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="mush_slider2" name="Mot.SPD" ref-minmaxfixture="mush1" ref-minmaxrange="2.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="mush1" inputNum="2"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="mush_slider3" name="Dimm/Strob" ref-minmaxfixture="mush1" ref-minmaxrange="2.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="mush1" inputNum="3"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="mush_slider4" name="Strob spc." ref-minmaxfixture="mush1" ref-minmaxrange="2.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="mush1" inputNum="4"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="mush_slider5" name="Fix.Col/Shad" ref-minmaxfixture="mush1" ref-minmaxrange="2.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="mush1" inputNum="5"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="mush_slider6" name="RED/Shd.spd." ref-minmaxfixture="mush1" ref-minmaxrange="2.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="mush1" inputNum="6"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="mush_slider7" name="GREEN" ref-minmaxfixture="mush1" ref-minmaxrange="2.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="mush1" inputNum="7"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="mush_slider8" name="BLUE" ref-minmaxfixture="mush1" ref-minmaxrange="2.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="mush1" inputNum="8"/>
+      </Output>
+    </Slider>
+    <!--<Slider ref-id="mush_slider9" name="LightMode" ref-minmaxfixture="mush1" ref-minmaxrange="2.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="mush1" inputNum="9"/>
+      </Output>
+    </Slider>-->
+
+    <Push ref-id="mush_lightmode0" name="OFF">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="0"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="mush_lightmode1" name="Auto 1">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="20"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode2" name="Auto 2">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="40"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode3" name="Auto 3">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="60"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode4" name="Auto 4">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="80"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode5" name="Auto 5">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="100"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode6" name="Auto 6">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="120"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode7" name="Sound RGB strb" >
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="140"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode8" name="Sound R strb">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="160"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode9" name="Sound G strb">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="180"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode10" name="Sound B strb">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="200"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode11" name="Sound 5">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="220"/>
+      </Output>
+    </Push>
+    <Push ref-id="mush_lightmode12" name="Sound/7col chg">
+      <Output state="PRESS">
+        <Binding ref-fixture="mush1" inputNum="9" value="240"/>
+      </Output>
+    </Push>
+  </Page>
+
+  <!-- ********************************************************************************************** EZSCAN *** -->
+  <Page ref-pageId="EZSCAN" name="EzScan">
+    <Joystick ref-id="ezscan_joystick" name="Move">
+      <PanOutput ref-minmaxfixture="scan1" ref-minmaxrange="1.1" >
+        <Binding ref-fixture="scan1" inputNum="1"/>
+      </PanOutput>
+      <TiltOutput ref-minmaxfixture="scan1" ref-minmaxrange="2.1" >
+        <Binding ref-fixture="scan1" inputNum="2"/>
+      </TiltOutput>
+    </Joystick>
+    <Slider ref-id="ezscan_slider4" name="Gobo Change Spd"  ref-minmaxfixture="scan1" ref-minmaxrange="4.19">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="scan1" inputNum="4"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="ezscan_slider5" name="Dimmer" ref-minmaxfixture="scan1" ref-minmaxrange="1.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="scan1" inputNum="5"/>
+      </Output>
+    </Slider>
+
+    <Push ref-id="ezscan_gobo1" name="Orange" img="orange">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="8"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo1s" name="Orange S" img="orange">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="72"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo2" name="Red" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="15"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo2s" name="Red S" img="red">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="79"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo3" name="Green" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="22"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo3s" name="Green S" img="green">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="86"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo4" name="Blue" img="blue">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="29"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo4s" name="Blue S" img="blue">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="93"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo5" name="RVB">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="36"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo5s" name="RVB S">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="100"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo6" name="Violet" img="violet">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="43"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo6s" name="Violet S" img="violet">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="107"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo7" name="Cyan">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="50"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo7s" name="Cyan S">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="114"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo8" name="RedBlue">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="57"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_gobo8s" name="RedBlue S">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="121"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_goboO" name="White" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="0"/>
+      </Output>
+    </Push>
+
+    <Push ref-id="ezscan_goboOs" name="White S" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="4" value="64"/>
+      </Output>
+    </Push>
+
+
+    <Push ref-id="ezscan_strobe1" name="Blackout" img="black">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe2" name="Full light" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="8"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe3" name="Strobe">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="16"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe4" name="Slow Fast 2">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="132"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe5" name="O.Slow C.Fast">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="140"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe6" name="Open 182">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="182"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe7" name="O.Fast C.Slow">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="190"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe8" name="Open 231">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="231"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe9" name="Random">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="240"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe10" name="Open 248">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="248"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe11" name="Pink">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="78"/>
+      </Output>
+    </Push>
+    <Push ref-id="ezscan_strobe12" name="Lavande">
+      <Output state="PRESS">
+        <Binding ref-fixture="scan1" inputNum="3" value="86"/>
+      </Output>
+    </Push>
+  </Page>
+
+
+  <!-- ********************************************************************************************** LYRE *** -->
+  <Page ref-pageId="LYRE9" name="Lyre9">
+    <Push ref-id="lyre9_reset" name="Reset">
+      <Output state="PRESS">
+        <Binding ref-fixture="lyre1" inputNum="9" value="150"/>
+        <Binding ref-fixture="lyre2" inputNum="9" value="150"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="lyre1" inputNum="9" value="0"/>
+        <Binding ref-fixture="lyre2" inputNum="9" value="0"/>
+      </Output>
+    </Push>
+    <Push ref-id="lyre9_noeffect" name="NoEffect">
+      <Output state="PRESS">
+        <Binding ref-fixture="lyre1" inputNum="3" value="0"/>
+        <Binding ref-fixture="lyre2" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+
+    <Slider ref-id="lyre9_red" name="" img="red" ref-minmaxfixture="lyre1" ref-minmaxrange="4.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="lyre1" inputNum="4"/>
+        <Binding ref-fixture="lyre2" inputNum="4"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="lyre9_green" name="" img="green" ref-minmaxfixture="lyre1" ref-minmaxrange="5.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="lyre1" inputNum="5"/>
+        <Binding ref-fixture="lyre2" inputNum="5"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="lyre9_blue" name="" img="blue" ref-minmaxfixture="lyre1" ref-minmaxrange="6.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="lyre1" inputNum="6"/>
+        <Binding ref-fixture="lyre2" inputNum="6"/>
+      </Output>
+    </Slider>
+
+
+    <ColorSelector ref-id="lyre9_rgb" name="RGB">
+      <RedOutput ref-minmaxfixture="lyre1" ref-minmaxrange="4.1" >
+        <Binding ref-fixture="lyre1" inputNum="4"/>
+        <Binding ref-fixture="lyre2" inputNum="4"/>
+      </RedOutput>
+      <GreenOutput ref-minmaxfixture="lyre1" ref-minmaxrange="5.1" >
+        <Binding ref-fixture="lyre1" inputNum="5"/>
+        <Binding ref-fixture="lyre2" inputNum="5"/>
+      </GreenOutput>
+      <BlueOutput ref-minmaxfixture="lyre1" ref-minmaxrange="6.1" >
+        <Binding ref-fixture="lyre1" inputNum="6"/>
+        <Binding ref-fixture="lyre2" inputNum="6"/>
+      </BlueOutput>
+    </ColorSelector>
+
+    <Slider ref-id="lyre9_white" name="" img="white" ref-minmaxfixture="lyre1" ref-minmaxrange="7.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="lyre1" inputNum="7"/>
+        <Binding ref-fixture="lyre2" inputNum="7"/>
+      </Output>
+    </Slider>
+
+
+
+    <Joystick ref-id="lyre9_joystick" name="Move">
+      <PanOutput ref-minmaxfixture="lyre1" ref-minmaxrange="1.1" >
+        <Binding ref-fixture="lyre1" inputNum="1" />
+        <Binding ref-fixture="lyre2" inputNum="1" />
+      </PanOutput>
+      <TiltOutput ref-minmaxfixture="lyre1" ref-minmaxrange="2.1" >
+        <Binding ref-fixture="lyre1" inputNum="2" />
+        <Binding ref-fixture="lyre2" inputNum="2" />
+      </TiltOutput>
+    </Joystick>
+
+
+    <Slider ref-id="lyre9_pan" name="Pan" ref-minmaxfixture="lyre1" ref-minmaxrange="1.1">
+      <Output state="Value" default="128">
+        <Binding ref-fixture="lyre1" inputNum="1" reverse="false"/>
+        <Binding ref-fixture="lyre2" inputNum="1" reverse="false"/>
+      </Output>
+    </Slider>
+
+    <ValueReverser ref-id="lyre9_reversePan" name="INVERT   Lyre2 PAN" comment="Activate reverse on PAN for lyre2">
+      <Target ref-id="lyre9_pan" hackBindingIndex="1"/>
+    </ValueReverser>
+
+    
+    <Slider ref-id="lyre9_tilt" name="Tilt" ref-minmaxfixture="lyre1" ref-minmaxrange="2.1">
+      <Output state="Value" default="128">
+        <Binding ref-fixture="lyre1" inputNum="2" reverse="false"/>
+        <Binding ref-fixture="lyre2" inputNum="2"  reverse="false"/>
+      </Output>
+    </Slider>
+
+    <ValueReverser ref-id="lyre9_reversePan" name="INVERT   Lyre2 PAN" comment="Activate reverse on PAN for lyre2">
+      <Target ref-id="lyre9_pan" hackBindingIndex="1"/>
+    </ValueReverser>
+
+    <ValueReverser ref-id="lyre9_reverseTilt" name="INVERT   Lyre2 TILT" comment="Activate reverse on TILT for lyre2">
+      <Target ref-id="lyre9_tilt" hackBindingIndex="1"/>
+    </ValueReverser>
+
+
+
+
+    <!--<Slider ref-id="lyre9_motorspeed" name="Motor speed" ref-minmaxfixture="lyre1" ref-minmaxrange="8.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="lyre1" inputNum="8"/>
+        <Binding ref-fixture="lyre2" inputNum="8"/>
+      </Output>
+    </Slider>-->
+
+
+
+    <Slider ref-id="lyre9_dimming" name="Dimming" ref-minmaxfixture="lyre1" ref-minmaxrange="3.2">
+      <Output state="Value" default="8">
+        <Binding ref-fixture="lyre1" inputNum="3"/>
+        <Binding ref-fixture="lyre2" inputNum="3"/>
+      </Output>
+    </Slider>
+    <Slider ref-id="lyre9_strobe" name="Strobe" ref-minmaxfixture="lyre1" ref-minmaxrange="3.3">
+      <Output state="Value" default="135">
+        <Binding ref-fixture="lyre1" inputNum="3"/>
+        <Binding ref-fixture="lyre2" inputNum="3"/>
+      </Output>
+    </Slider>
+
+    <Push ref-id="lyre9_medallion" name="Full light">
+      <Output state="PRESS">
+        <Binding ref-fixture="lyre1" inputNum="3" value="240"/>
+        <Binding ref-fixture="lyre2" inputNum="3" value="240"/>
+      </Output>
+    </Push>
+  </Page>
+
+  <Page ref-pageId="PTEST" name="Strobe">
+    <!--<Push ref-id="test_preset_par1_flashRedBlue" name="Par1 flashRB">
+      <Output state="PRESS">
+        <Preset name="**RED**" ref-fixture="par1"/>
+        <Preset name="**RED**" ref-fixture="par2"/>
+      </Output>
+      <Output state="RELEASE">
+        <Preset name="**BLUE**" ref-fixture="par1"/>
+        <Preset name="**BLUE**" ref-fixture="par2"/>
+      </Output>
+    </Push>-->
+
+    <Push ref-id="test_strobe1" name="Strobe" img="white">
+      <Output state="PRESS">
+        <Binding ref-fixture="strobe1" inputNum="1" value="255"/>
+        <Binding ref-fixture="strobe1" inputNum="2" value="124"/>
+        <Binding ref-fixture="strobe1" inputNum="3" value="247"/>
+      </Output>
+      <Output state="RELEASE">
+        <Binding ref-fixture="strobe1" inputNum="1" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="2" value="0"/>
+        <Binding ref-fixture="strobe1" inputNum="3" value="0"/>
+      </Output>
+    </Push>
+
+    <!--<OnOff ref-id="test_par1orange" name="PAR" comment="Orange sur par12" img="orange">
+      <Output state="ON">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="255"/>
+        <Binding ref-fixture="par1" inputNum="3" value="40"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+      <Output state="OFF">
+        <Binding ref-fixture="par1" inputNum="1" value="0" comment="Par RGB mode"/>
+        <Binding ref-fixture="par1" inputNum="2" value="0"/>
+        <Binding ref-fixture="par1" inputNum="3" value="0"/>
+        <Binding ref-fixture="par1" inputNum="4" value="0"/>
+      </Output>
+    </OnOff>-->
+
+
+    <!--<OnOff ref-id="test_lyreorange" name="LYRE" comment="Orange sur par12" img="orange">
+      <Output state="ON">
+        <Binding ref-fixture="lyre1" inputNum="3" value="240"/>
+        <Binding ref-fixture="lyre2" inputNum="3" value="240"/>
+        
+        <Binding ref-fixture="lyre1" inputNum="4" value="255"/>
+        <Binding ref-fixture="lyre1" inputNum="5" value="40"/>
+        <Binding ref-fixture="lyre1" inputNum="6" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="7" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="1" value="144"/>
+        <Binding ref-fixture="lyre1" inputNum="2" value="108"/>
+
+        <Binding ref-fixture="lyre2" inputNum="4" value="255"/>
+        <Binding ref-fixture="lyre2" inputNum="5" value="40"/>
+        <Binding ref-fixture="lyre2" inputNum="6" value="0"/>
+        <Binding ref-fixture="lyre2" inputNum="7" value="0"/>
+        <Binding ref-fixture="lyre2" inputNum="1" value="79"/>
+        <Binding ref-fixture="lyre2" inputNum="2" value="94"/>
+      </Output>
+      <Output state="OFF">
+        <Binding ref-fixture="lyre1" inputNum="4" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="5" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="6" value="0"/>
+        <Binding ref-fixture="lyre1" inputNum="7" value="0"/>
+
+        <Binding ref-fixture="lyre2" inputNum="4" value="0"/>
+        <Binding ref-fixture="lyre2" inputNum="5" value="0"/>
+        <Binding ref-fixture="lyre2" inputNum="6" value="0"/>
+        <Binding ref-fixture="lyre2" inputNum="7" value="0"/>
+
+      </Output>
+    </OnOff>-->
+
+
+    <Slider ref-id="test_strobe1_dimmer" name="Dimmer" ref-minmaxfixture="strobe1" ref-minmaxrange="1.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="strobe1" inputNum="1"/>
+      </Output>
+    </Slider>
+
+    <Slider ref-id="test_strobe1_mode" name="Fade mode" ref-minmaxfixture="strobe1" ref-minmaxrange="1.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="strobe1" inputNum="2"/>
+      </Output>
+    </Slider>
+
+    <Slider ref-id="test_strobe1_effect" name="Flash speed" ref-minmaxfixture="strobe1" ref-minmaxrange="1.1">
+      <Output state="Value" default="0">
+        <Binding ref-fixture="strobe1" inputNum="3"/>
+      </Output>
+    </Slider>
+
+
+
+  </Page>
+</SetConfiguration>

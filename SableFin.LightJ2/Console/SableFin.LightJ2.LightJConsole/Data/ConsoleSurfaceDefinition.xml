@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- les coordonnées correspondent au cellule de la grille de construction de la UI-->
+<LightConsole>
+  <Surface id="SURF1" rows="9" cols="16">
+    <CommonPage>
+      <!-- il s'agit d'un page toujours visible en superposition de toutes-->
+      <Border id="brdCommonPush" col="0" row="0" rowspan="2"/>
+      <Push id="commonPush1" row="0" col="0"/>
+      <Push id="commonPush2" row="1" col="0"/>
+      <Border id="brdCommonPush" col="0" row="2" rowspan="3"/>
+      <Push id="commonPush3" row="2" col="0"/>
+      <Push id="commonPush4" row="3" col="0"/>
+      <Push id="commonPush5" row="4" col="0"/>
+      <Border id="brdCommonPush" col="0" row="5" rowspan="4"/>
+      <Push id="commonPush6" row="5" col="0"/>
+      <Push id="commonPush7" row="6" col="0"/>
+      <Push id="commonPush8" row="7" col="0"/>
+      <Push id="commonPush9" row="9" col="0"/>
+      <MainLcd id="mainlcd" row="0" col="1" colspan="3" rowspan="1"/>
+
+
+    </CommonPage>
+    
+    <Page id="PMAIN">
+      <TouchBpm id="touchBpm" row="0" col="13" colspan="2" rowspan="2"/>
+      <OnOff id="main_onoff_par1" col="4" row="0"/>
+      <OnOff id="main_onoff_jelly1" col="5" row="0"/>
+      <OnOff id="main_onoff_laser1" col="6" row="0"/>
+      <OnOff id="main_onoff_mush1" col="7" row="0"/>
+      <OnOff id="main_onoff_ezscan1" col="8" row="0"/>
+      <OnOff id="main_onoff_lyres" col="9" row="0"/>
+      <OnOff id="main_onoff_strobe" col="10" row="0"/>
+
+      <Push id="main_jelly1_off" col="1" row="2"/>
+      <Push id="main_jelly1_sound" col="2" row="2"/>
+      <Push id="main_jelly1_chase" col="3" row="2"/>
+      <Push id="main_jelly1_flashR" col="1" row="3"/>
+      <Push id="main_jelly1_flashG" col="2" row="3"/>
+      <Push id="main_jelly1_flashB" col="3" row="3"/>
+      <Push id="main_jelly1_flashW" col="1" row="4"/>
+      <VerticalSlider id="main_jelly1_speed" col="4"  row="1" rowspan="4"/>
+
+      <Push id="main_laser1_off" col="6" row="2"/>
+      <Push id="main_laser1_sound" col="7" row="2"/>
+      <Push id="main_laser1_mix" col="8" row="2"/>
+      <Push id="main_laser1_flashR" col="6" row="3"/>
+      <Push id="main_laser1_flashG" col="7" row="3"/>
+      <Push id="main_laser1_flashY" col="7" row="4"/>
+
+      <VerticalSlider id="main_laser1_speed" col="9"  row="1" rowspan="4"/>
+
+
+      <Push id="main_par1_off" col="11" row="2"/>
+      <Push id="main_par1_sound" col="12" row="2"/>
+      <Push id="main_par1_chase" col="13" row="2"/>
+      <Push id="main_par1_flashR" col="11" row="3"/>
+      <Push id="main_par1_flashG" col="12" row="3"/>
+      <Push id="main_par1_flashB" col="13" row="3"/>
+      <Push id="main_par1_flashW" col="11" row="4"/>
+      <Push id="main_par1_flashY" col="12" row="4"/>
+      <Push id="main_par1_flashO" col="13" row="4"/>
+      <Push id="main_par1_flashV" col="11" row="5"/>
+      <Push id="main_par1_flashROSE" col="12" row="5"/>
+      <VerticalSlider id="main_par1_speed" col="14"  row="2" rowspan="4"/>
+
+      <Joystick id="main_ezscan_joystick" col="1" row="5" colspan="4" rowspan="4"/>
+      <VerticalSlider id="main_ezscan_sliderGobo" row="5" col="5" rowspan="4"/>
+      <Push id="main_ezscan_gobo1" col="7" row="6"/>
+      <Push id="main_ezscan_gobo2" col="8" row="6"/>
+      <Push id="main_ezscan_gobo3" col="9" row="6"/>
+      <Push id="main_ezscan_gobo4" col="10" row="6"/>
+      <Push id="main_ezscan_gobo5" col="7" row="7"/>
+      <Push id="main_ezscan_gobo6" col="8" row="7"/>
+      <Push id="main_ezscan_gobo7" col="9" row="7"/>
+      <Push id="main_ezscan_gobo8" col="10" row="7"/>
+      <Push id="main_ezscan_goboO" col="7" row="8"/>
+      <Push id="main_ezscan_blackout" col="9" row="8"/>
+      <Push id="main_ezscan_open" col="10" row="8"/>
+
+
+
+    </Page>
+    <Page id="PPAR">
+      <VerticalSlider id="par_mode" row="3" col="1" rowspan="5"/>
+
+      <VerticalSlider id="par_red" row="3" col="3" rowspan="5"/>
+      <VerticalSlider id="par_green" row="3" col="4" rowspan="5"/>
+      <VerticalSlider id="par_blue" row="3" col="5" rowspan="5"/>
+      <VerticalSlider id="par_speed" row="2" col="14" rowspan="6"/>
+
+      <Push id="par_mode1" col="9" row="3"/>
+      <Push id="par_mode2" col="10" row="3"/>
+      <Push id="par_mode3" col="11" row="3"/>
+      <Push id="par_mode4" col="12" row="3"/>
+
+      <Push id="par_color1" col="9" row="5"/>
+      <Push id="par_color2" col="10" row="5"/>
+      <Push id="par_color3" col="11" row="5"/>
+      <Push id="par_color4" col="12" row="5"/>
+      <Push id="par_color5" col="9" row="6"/>
+      <Push id="par_color6" col="10" row="6"/>
+      <Push id="par_color7" col="11" row="6"/>
+      <Push id="par_color8" col="12" row="6"/>
+
+    </Page>
+    <Page id="PJELLY">
+      <Push id="jelly_mode1" col="9" row="0"/>
+      <Push id="jelly_mode2" col="3" row="2"/>
+      <Push id="jelly_mode3" col="3" row="5"/>
+      <Push id="jelly_mode4" col="11" row="0"/>
+
+      <Border id="brdJellyColor" col="3" row="2" rowspan="2" colspan="10"/>
+
+      <Push id="jelly_color0" col="4" row="2"/>
+      <Push id="jelly_color1" col="5" row="2"/>
+      <Push id="jelly_color2" col="6" row="2"/>
+      <Push id="jelly_color3" col="7" row="2"/>
+      <Push id="jelly_color4" col="8" row="2"/>
+      <Push id="jelly_color5" col="9" row="2"/>
+      <Push id="jelly_color6" col="10" row="2"/>
+      <Push id="jelly_color7" col="11" row="2"/>
+
+      <Push id="jelly_color8" col="4" row="3"/>
+      <Push id="jelly_color9" col="5" row="3"/>
+      <Push id="jelly_color10" col="6" row="3"/>
+      <Push id="jelly_color11" col="7" row="3"/>
+      <Push id="jelly_color12" col="8" row="3"/>
+      <Push id="jelly_color13" col="9" row="3"/>
+      <Push id="jelly_color14" col="10" row="3"/>
+      <Push id="jelly_color15" col="11" row="3"/>
+
+
+      <Border id="brdJellyColor" col="3" row="5" rowspan="3" colspan="10"/>
+
+      <Push id="jelly_chase0" col="4" row="5"/>
+      <Push id="jelly_chase1" col="5" row="5"/>
+      <Push id="jelly_chase2" col="6" row="5"/>
+      <Push id="jelly_chase3" col="7" row="5"/>
+      <Push id="jelly_chase4" col="8" row="5"/>
+      <Push id="jelly_chase5" col="9" row="5"/>
+      <Push id="jelly_chase6" col="10" row="5"/>
+      <Push id="jelly_chase7" col="11" row="5"/>
+      <Push id="jelly_chase8" col="12" row="5"/>
+
+
+      <Push id="jelly_chase9" col="4" row="6"/>
+      <Push id="jelly_chase10" col="5" row="6"/>
+      <Push id="jelly_chase11" col="6" row="6"/>
+      <Push id="jelly_chase12" col="7" row="6"/>
+      <Push id="jelly_chase13" col="8" row="6"/>
+      <Push id="jelly_chase14" col="9" row="6"/>
+      <Push id="jelly_chase15" col="10" row="6"/>
+      <Push id="jelly_chase16" col="11" row="6"/>
+      <Push id="jelly_chase17" col="12" row="6"/>
+
+      <Push id="jelly_chase18" col="4" row="7"/>
+      <Push id="jelly_chase19" col="5" row="7"/>
+      <Push id="jelly_chase20" col="6" row="7"/>
+      <Push id="jelly_chase21" col="7" row="7"/>
+      <Push id="jelly_chase22" col="8" row="7"/>
+      <Push id="jelly_chase23" col="9" row="7"/>
+      <Push id="jelly_chase24" col="10" row="7"/>
+      <Push id="jelly_chase25" col="11" row="7"/>
+
+
+      <VerticalSlider id="jelly_strobe" row="2" col="14" rowspan="6"/>
+    </Page>
+    <Page id="PLASER">
+      <!--<Joystick id="joystick1" row="0" col="12" rowspan="2" colspan="2"/>-->
+      <Push id="laser_mode0" col="14" row="0"/>
+      <Push id="laser_mode1" col="1" row="1"/>
+      <Push id="laser_mode2" col="1" row="2"/>
+      <Push id="laser_mode3" col="1" row="3"/>
+      <Push id="laser_mode4" col="1" row="4"/>
+      <Push id="laser_mode5" col="2" row="1"/>
+      <Push id="laser_mode6" col="2" row="2"/>
+      <Push id="laser_mode7" col="2" row="3"/>
+      <Push id="laser_mode8" col="2" row="4"/>
+
+      <VerticalSlider id="laser_sliderx" row="1" col="3" rowspan="6"/>
+      <VerticalSlider id="laser_slidery" row="1" col="4" rowspan="6"/>
+
+      <VerticalSlider id="laser_slidercolor" row="1" col="8" rowspan="4"/>
+      <VerticalSlider id="laser_sliderzoom" row="5" col="8" rowspan="4"/>
+
+      <Push id="laser_colormode0" col="11" row="0"/>
+      <Push id="laser_colormode1" col="9" row="0"/>
+      <Push id="laser_colormode2" col="9" row="1"/>
+      <Push id="laser_colormode3" col="9" row="2"/>
+      <Push id="laser_colormode4" col="9" row="3"/>
+      <Push id="laser_colormode5" col="9" row="4"/>
+      <Push id="laser_colormode6" col="9" row="5"/>
+      <Push id="laser_colormode7" col="9" row="6"/>
+      <Push id="laser_colormode8" col="9" row="7"/>
+      <Push id="laser_colormode9" col="9" row="8"/>
+
+      <Border id="brdPattern" col="11" row="1" rowspan="8" colspan="4"/>
+
+      <Push id="laser_pattern1" col="11" row="1"/>
+      <Push id="laser_pattern2" col="12" row="1"/>
+      <Push id="laser_pattern3" col="13" row="1"/>
+      <Push id="laser_pattern4" col="14" row="1"/>
+      <Push id="laser_pattern5" col="11" row="2"/>
+      <Push id="laser_pattern6" col="12" row="2"/>
+      <Push id="laser_pattern7" col="13" row="2"/>
+      <Push id="laser_pattern8" col="14" row="2"/>
+      <Push id="laser_pattern9" col="11" row="3"/>
+      <Push id="laser_pattern10" col="12" row="3"/>
+      <Push id="laser_pattern11" col="13" row="3"/>
+      <Push id="laser_pattern12" col="14" row="3"/>
+      <Push id="laser_pattern13" col="11" row="4"/>
+      <Push id="laser_pattern14" col="12" row="4"/>
+      <Push id="laser_pattern15" col="13" row="4"/>
+      <Push id="laser_pattern16" col="14" row="4"/>
+      <Push id="laser_pattern17" col="11" row="5"/>
+      <Push id="laser_pattern18" col="12" row="5"/>
+      <Push id="laser_pattern19" col="13" row="5"/>
+      <Push id="laser_pattern20" col="14" row="5"/>
+      <Push id="laser_pattern21" col="11" row="6"/>
+      <Push id="laser_pattern22" col="12" row="6"/>
+      <Push id="laser_pattern23" col="13" row="6"/>
+      <Push id="laser_pattern24" col="14" row="6"/>
+      <Push id="laser_pattern25" col="11" row="7"/>
+      <Push id="laser_pattern26" col="12" row="7"/>
+      <Push id="laser_pattern27" col="13" row="7"/>
+      <Push id="laser_pattern28" col="14" row="7"/>
+      <Push id="laser_pattern29" col="11" row="8"/>
+      <Push id="laser_pattern30" col="12" row="8"/>
+      <Push id="laser_pattern31" col="13" row="8"/>
+      <Push id="laser_pattern32" col="14" row="8"/>
+    </Page>
+    <Page id="PMUSH">
+      <VerticalSlider id="mush_slider1" row="3" col="2" rowspan="6"/>
+      <VerticalSlider id="mush_slider2" row="3" col="3" rowspan="6"/>
+      <VerticalSlider id="mush_slider3" row="3" col="4" rowspan="6"/>
+      <VerticalSlider id="mush_slider4" row="3" col="5" rowspan="6"/>
+      <VerticalSlider id="mush_slider5" row="3" col="6" rowspan="6"/>
+      <VerticalSlider id="mush_slider6" row="3" col="7" rowspan="6"/>
+      <VerticalSlider id="mush_slider7" row="3" col="8" rowspan="6"/>
+      <VerticalSlider id="mush_slider8" row="3" col="9" rowspan="6"/>
+
+      <Push id="mush_lightmode0" col="9" row="0"/>
+      <Push id="mush_lightmode1" col="12" row="1"/>
+      <Push id="mush_lightmode2" col="13" row="1"/>
+      <Push id="mush_lightmode3" col="14" row="1"/>
+      <Push id="mush_lightmode4" col="12" row="2"/>
+      <Push id="mush_lightmode5" col="13" row="2"/>
+      <Push id="mush_lightmode6" col="14" row="2"/>
+
+      <Push id="mush_lightmode7" col="12" row="4"/>
+      <Push id="mush_lightmode8" col="13" row="4"/>
+      <Push id="mush_lightmode9" col="14" row="4"/>
+      <Push id="mush_lightmode10" col="12" row="5"/>
+      <Push id="mush_lightmode11" col="13" row="5"/>
+      <Push id="mush_lightmode12" col="14" row="5"/>
+
+    </Page>
+    <Page id="EZSCAN">
+      <VerticalSlider id="ezscan_slider4" row="1" col="10" rowspan="6"/>
+      <VerticalSlider id="ezscan_slider5" row="1" col="6" rowspan="6"/>
+
+      <Joystick id="ezscan_joystick" col="1" row="1" colspan="4" rowspan="4"/>
+
+      <Border id="brdStrobe" col="7" row="1" rowspan="6" colspan="2"/>
+      <Push id="ezscan_strobe1" col="7" row="1"/>
+      <Push id="ezscan_strobe2" col="8" row="1"/>
+      <Push id="ezscan_strobe3" col="8" row="2"/>
+      <Push id="ezscan_strobe4" col="8" row="2"/>
+      <Push id="ezscan_strobe5" col="7" row="3"/>
+      <Push id="ezscan_strobe6" col="8" row="3"/>
+      <Push id="ezscan_strobe7" col="7" row="4"/>
+      <Push id="ezscan_strobe8" col="8" row="4"/>
+      <Push id="ezscan_strobe9" col="7" row="5"/>
+      <Push id="ezscan_strobe10" col="8" row="5"/>
+      <Push id="ezscan_strobe11" col="7" row="6"/>
+      <Push id="ezscan_strobe12" col="8" row="6"/>
+
+
+
+      <Border id="brdGobo" col="11" row="1" rowspan="3" colspan="4"/>
+      <Push id="ezscan_gobo1" col="11" row="1"/>
+      <Push id="ezscan_gobo2" col="12" row="1"/>
+      <Push id="ezscan_gobo3" col="13" row="1"/>
+      <Push id="ezscan_gobo4" col="14" row="1"/>
+      <Push id="ezscan_gobo5" col="11" row="2"/>
+      <Push id="ezscan_gobo6" col="12" row="2"/>
+      <Push id="ezscan_gobo7" col="13" row="2"/>
+      <Push id="ezscan_gobo8" col="14" row="2"/>
+      <Push id="ezscan_goboO" col="11" row="3"/>
+
+      <Border id="brdGoboS" col="11" row="4" rowspan="3" colspan="4"/>
+      <Push id="ezscan_gobo1s" col="11" row="4"/>
+      <Push id="ezscan_gobo2s" col="12" row="4"/>
+      <Push id="ezscan_gobo3s" col="13" row="4"/>
+      <Push id="ezscan_gobo4s" col="14" row="4"/>
+      <Push id="ezscan_gobo5s" col="11" row="5"/>
+      <Push id="ezscan_gobo6s" col="12" row="5"/>
+      <Push id="ezscan_gobo7s" col="13" row="5"/>
+      <Push id="ezscan_gobo8s" col="14" row="5"/>
+      <Push id="ezscan_goboOs" col="11" row="6"/>
+
+    </Page>
+
+    <Page id="LYRE9">
+      <VerticalSlider id="lyre9_red" row="5" col="2" rowspan="4"/>
+      <VerticalSlider id="lyre9_green" row="5" col="3" rowspan="4"/>
+      <VerticalSlider id="lyre9_blue" row="5" col="4" rowspan="4"/>
+      <VerticalSlider id="lyre9_white" row="5" col="1" rowspan="4"/>
+      <!--<VerticalSlider id="lyre9_motorspeed" row="1" col="7" rowspan="4"/>-->
+
+      <ColorSelector id="lyre9_rgb" row="1" col="2" rowspan="4" colspan="4"/>
+      
+      <Push id="lyre9_noeffect" col="9" row="0"/>
+      <VerticalSlider id="lyre9_strobe" row="1" col="6" rowspan="4"/>
+      <VerticalSlider id="lyre9_dimming" row="1" col="1" rowspan="4"/>
+      <Push id="lyre9_medallion" col="10" row="0"/>
+
+      <Joystick id="lyre9_joystick" col="5" row="5" colspan="4" rowspan="4"/>
+
+      <ValueReverser id="lyre9_reversePan" row="0" col="12"/>
+      <VerticalSlider id="lyre9_pan" row="1" col="12" rowspan="6"/>
+      <ValueReverser id="lyre9_reverseTilt" row="0" col="13"/>
+      <VerticalSlider id="lyre9_tilt" row="1" col="13" rowspan="6"/>
+
+
+
+      <Push id="lyre9_reset" col="14" row="0"/>
+    </Page>
+
+
+    <Page id="PTEST">
+      <!--<Push id="test_preset_par1_flashRedBlue" col="1" row="2"/>-->
+
+      <Push id="test_strobe1" col="3" row="2"/>
+      <!--<OnOff id="test_par1orange" col="3" row="4"/>
+      <OnOff id="test_lyreorange" col="2" row="4"/>-->
+
+      <VerticalSlider id="test_strobe1_dimmer" col="5"  row="1" rowspan="6"/>
+      <VerticalSlider id="test_strobe1_mode" col="6"  row="1" rowspan="6"/>
+      <VerticalSlider id="test_strobe1_effect" col="7"  row="1" rowspan="6"/>
+
+    </Page>
+
+</Surface>
+</LightConsole>

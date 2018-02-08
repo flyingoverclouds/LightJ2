@@ -1,0 +1,58 @@
+﻿<UserControl
+    x:Class="SableFin.LightJ2.LightJConsole.SurfaceControls.BindingReverserButton"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SableFin.LightJ2.LightJConsole.SurfaceControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="80"
+    d:DesignWidth="80">
+
+    <Grid>
+        <Viewbox>
+            <Border x:Name="pushButton" BorderBrush="Transparent" BorderThickness="1" Background="#FFF0F0F0" 
+                PointerPressed="pushButton_PointerPressed" PointerReleased="pushButton_PointerReleased" PointerExited="pushButton_PointerExited" 
+                Width="80" Height="80"
+                >
+                <Border BorderBrush="LightGray" BorderThickness="2" >
+                    <Grid IsHitTestVisible="False">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.4*"/>
+                            <RowDefinition Height="0.6*"/>
+                        </Grid.RowDefinitions>
+
+                        <Border x:Name="brdTop" BorderThickness="0.5" BorderBrush="DarkGray">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Ellipse Grid.Column="1" Width="19" Height="19" Fill="DarkGray"/>
+                                <!--<Ellipse x:Name="ledRed" Grid.Column="1" Width="12" Height="12" Fill="DarkRed" Visibility="Collapsed"/>-->
+                                <Ellipse x:Name="ledGreen" Grid.Column="1" Width="19" Height="19" Fill="#FFD6516C" Visibility="Collapsed"/>
+                            </Grid>
+                        </Border>
+
+                        <Border x:Name="pushArea" BorderBrush="DarkGray" BorderThickness="3" Grid.Row="1" >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="4*"/>
+                                    <ColumnDefinition Width="15*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border x:Name="imgPushArea" Visibility="Collapsed" Grid.ColumnSpan="2" Height="38" Width="38"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                <TextBlock Text="{Binding Text}" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Grid.ColumnSpan="2" Margin="0,4" FontFamily="Fonts/22805_LcdD.ttf#LcdD" TextWrapping="Wrap" TextAlignment="Center" >
+                                    <TextBlock.RenderTransform>
+                                        <TranslateTransform X="1" Y="1"/>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                                <TextBlock Text="{Binding Text}" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" Grid.ColumnSpan="2" Margin="0,4" FontFamily="Fonts/22805_LcdD.ttf#LcdD" TextWrapping="Wrap" TextAlignment="Center" />
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Border>
+        </Viewbox>
+    </Grid>
+</UserControl>

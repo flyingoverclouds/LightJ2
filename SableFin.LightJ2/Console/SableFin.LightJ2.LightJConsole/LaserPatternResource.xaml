@@ -1,0 +1,54 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d"
+    >
+
+    <ImageBrush ImageSource="Data/LaserPattern/BLUE.png" x:Key="blue"/>
+    <ImageBrush ImageSource="Data/LaserPattern/GREEN.png" x:Key="green"/>
+    <ImageBrush ImageSource="Data/LaserPattern/RED.png" x:Key="red"/>
+    <ImageBrush ImageSource="Data/LaserPattern/SOUND.png" x:Key="sound"/>
+    <ImageBrush ImageSource="Data/LaserPattern/WHITE.png" x:Key="white"/>
+    <ImageBrush ImageSource="Data/LaserPattern/YELLOW.png" x:Key="yellow"/>
+    <ImageBrush ImageSource="Data/LaserPattern/BLACK.png" x:Key="black"/>
+    <ImageBrush ImageSource="Data/LaserPattern/ORANGE.png" x:Key="orange"/>
+    <ImageBrush ImageSource="Data/LaserPattern/VIOLET.png" x:Key="violet"/>
+    <ImageBrush ImageSource="Data/LaserPattern/ROSE.png" x:Key="rose"/>
+
+    <ImageBrush ImageSource="Data/LaserPattern/00.png" x:Key="pattern00"/>
+    <ImageBrush ImageSource="Data/LaserPattern/01.png" x:Key="pattern01"/>
+    <ImageBrush ImageSource="Data/LaserPattern/02.png" x:Key="pattern02"/>
+    <ImageBrush ImageSource="Data/LaserPattern/03.png" x:Key="pattern03"/>
+    <ImageBrush ImageSource="Data/LaserPattern/04.png" x:Key="pattern04"/>
+    <ImageBrush ImageSource="Data/LaserPattern/05.png" x:Key="pattern05"/>
+    <ImageBrush ImageSource="Data/LaserPattern/06.png" x:Key="pattern06"/>
+    <ImageBrush ImageSource="Data/LaserPattern/07.png" x:Key="pattern07"/>
+    <ImageBrush ImageSource="Data/LaserPattern/08.png" x:Key="pattern08"/>
+    <ImageBrush ImageSource="Data/LaserPattern/09.png" x:Key="pattern09"/>
+
+    <ImageBrush ImageSource="Data/LaserPattern/10.png" x:Key="pattern10"/>
+    <ImageBrush ImageSource="Data/LaserPattern/11.png" x:Key="pattern11"/>
+    <ImageBrush ImageSource="Data/LaserPattern/12.png" x:Key="pattern12"/>
+    <ImageBrush ImageSource="Data/LaserPattern/13.png" x:Key="pattern13"/>
+    <ImageBrush ImageSource="Data/LaserPattern/14.png" x:Key="pattern14"/>
+    <ImageBrush ImageSource="Data/LaserPattern/15.png" x:Key="pattern15"/>
+    <ImageBrush ImageSource="Data/LaserPattern/16.png" x:Key="pattern16"/>
+    <ImageBrush ImageSource="Data/LaserPattern/17.png" x:Key="pattern17"/>
+    <ImageBrush ImageSource="Data/LaserPattern/18.png" x:Key="pattern18"/>
+    <ImageBrush ImageSource="Data/LaserPattern/19.png" x:Key="pattern19"/>
+
+    <ImageBrush ImageSource="Data/LaserPattern/20.png" x:Key="pattern20"/>
+    <ImageBrush ImageSource="Data/LaserPattern/21.png" x:Key="pattern21"/>
+    <ImageBrush ImageSource="Data/LaserPattern/22.png" x:Key="pattern22"/>
+    <ImageBrush ImageSource="Data/LaserPattern/23.png" x:Key="pattern23"/>
+    <ImageBrush ImageSource="Data/LaserPattern/24.png" x:Key="pattern24"/>
+    <ImageBrush ImageSource="Data/LaserPattern/25.png" x:Key="pattern25"/>
+    <ImageBrush ImageSource="Data/LaserPattern/26.png" x:Key="pattern26"/>
+    <ImageBrush ImageSource="Data/LaserPattern/27.png" x:Key="pattern27"/>
+    <ImageBrush ImageSource="Data/LaserPattern/28.png" x:Key="pattern28"/>
+    <ImageBrush ImageSource="Data/LaserPattern/29.png" x:Key="pattern29"/>
+    <ImageBrush ImageSource="Data/LaserPattern/30.png" x:Key="pattern30"/>
+    <ImageBrush ImageSource="Data/LaserPattern/31.png" x:Key="pattern31"/>
+</ResourceDictionary>

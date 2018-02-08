@@ -1,0 +1,22 @@
+﻿<UserControl
+    x:Class="SableFin.LightJ2.SurfaceControls.VerticalSlider"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SableFin.LightJ2.SurfaceControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="500"
+    Width="50">
+    <Grid Margin="0,0,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border x:Name="imgPushArea" Visibility="Collapsed" Grid.Row="0" Height="38" Width="38"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="{Binding Text}" Foreground="LightSalmon" FontSize="20" Grid.Row="0" TextAlignment="Center" Margin="-40,0,-40,0"/>
+        <Slider x:Name="sld" Orientation="Vertical"  Style="{StaticResource SliderDefaultStyle}" Grid.Row="1"
+                Value="{Binding DmxValue,Mode=TwoWay}" 
+                Minimum="0" Maximum="255"/>
+    </Grid>
+</UserControl>

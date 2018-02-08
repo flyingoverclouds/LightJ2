@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FixturesDatabase name="fixtureDbNico" version="0.16.8.19" author="Nicolas CLERC" date="2014-06-11" origin="demoTest">
+  <!--
+  <Fixture id="" name="" manufacturer="" version="20140611" manufacturer="" ref="" language="">
+    <Input num="" name="">
+      <Range num="" type="" minimum="" maximum="" name=""/>
+      <Range num="" type="" minimum="" maximum="" name=""/>
+    </Input>
+  </Fixture>
+  -->
+  <Fixture id="LYRE7X15W-9CHANNEL" name="Lyre 7*15W RGBW (9channels)" manufacturer="CHINA" version="20160402" ref="" language="us">
+    <Input num="1" name="Level">
+      <Range num="1.1" name="Level" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="2" name="Vertical">
+      <Range num="2.1" name="Vertical" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="3" name="Dimming and Strob">
+      <Range num="3.1" type="continuous" minimum="0" maximum="7" name="No Effect"/>
+      <Range num="3.2" type="continuous" minimum="8" maximum="134" name="Dimming" />
+      <Range num="3.3" type="continuous" minimum="135" maximum="239" name="Strobe low2fast" />
+      <Range num="3.4" type="continuous" minimum="240" maximum="255" name="Medallion" />
+    </Input>
+    <Input num="4" name="Red Dimming">
+      <Range num="4.1" type="continuous" minimum="0" maximum="255" name="RED"/>
+    </Input>
+    <Input num="5" name="Green Dimming">
+      <Range num="5.1" type="continuous" minimum="0" maximum="255" name="GREEN"/>
+    </Input>
+    <Input num="6" name="Blue Dimming">
+      <Range num="6.1" type="continuous" minimum="0" maximum="255" name="BLUE"/>
+    </Input>
+    <Input num="7" name="White Dimming">
+      <Range num="7.1" type="continuous" minimum="0" maximum="255" name="WHITE"/>
+    </Input>
+    <Input num="8" name="Motor speed">
+      <Range num="8.1" type="continuous" minimum="0" maximum="255" name="MOTOR SPEED"/>
+    </Input>
+    <Input num="9" name="Reset">
+      <Range num="9.1" type="continuous" minimum="0" maximum="149" name="Reset-UnusedLOW"/>
+      <Range num="9.2" type="continuous" minimum="150" maximum="200" name="Reset"/>
+      <Range num="9.3" type="continuous" minimum="201" maximum="255" name="Reset-UnusedHIGH"/>
+    </Input>
+    <Preset name="**BLACKOUT**" title="Blackout" description="full blackout : rvbw and dimmer to zero">
+      <Set input="3" value="0" description="set dimming to zero"/>
+      <Set input="4" value="0" description="red"/>
+      <Set input="5" value="0" description="green"/>
+      <Set input="6" value="0" description="blue"/>
+      <Set input="7" value="0" description="white"/>
+    </Preset>
+  </Fixture>
+
+  <Fixture id="LYRE7X15W-14CHANNEL" name="Lyre 7*15W RGBW (14channels)" manufacturer="CHINA" version="20160402" ref="" language="us">
+    <Input num="1" name="Level">
+      <Range num="1.1" type="continuous" minimum="0" maximum="255" name="Level" />
+    </Input>
+    <Input num="2" name="Level Dimming">
+      <Range num="2.1" type="continuous" minimum="0" maximum="255" name="Level Dimming" />
+    </Input>
+    <Input num="3" name="Vertical">
+      <Range num="3.1" type="continuous" minimum="0" maximum="255" name="Vertical" />
+    </Input>
+    <Input num="4" name="Vertical Dimming">
+      <Range num="4.1" type="continuous" minimum="0" maximum="255" name="Vertical Dimming" />
+    </Input>
+    <Input num="5" name="Speed">
+      <Range num="5.1" type="continuous" minimum="0" maximum="255" name="Speed"/>
+    </Input>
+    <Input num="6" name="Dimming and Strob">
+      <Range num="6.1" type="continuous" minimum="0" maximum="7" name="No Effect"/>
+      <Range num="6.2" type="continuous" minimum="8" maximum="134" name="Dimming" />
+      <Range num="6.3" type="continuous" minimum="135" maximum="239" name="Strobe low2fast" />
+      <Range num="6.4" type="continuous" minimum="240" maximum="255" name="Medallion" />
+    </Input>
+
+    <Input num="7" name="Red Dimming">
+      <Range num="7.1" type="continuous" minimum="0" maximum="255" name="RED"/>
+    </Input>
+    <Input num="8" name="Green Dimming">
+      <Range num="8.1" type="continuous" minimum="0" maximum="255" name="GREEN"/>
+    </Input>
+    <Input num="9" name="Blue Dimming">
+      <Range num="9.1" type="continuous" minimum="0" maximum="255" name="BLUE"/>
+    </Input>
+    <Input num="10" name="White Dimming">
+      <Range num="10.1" type="continuous" minimum="0" maximum="255" name="WHITE"/>
+    </Input>
+    <Input num="11" name="Color mode">
+      <Range num="11.1" type="continuous" minimum="0" maximum="7" name="Color select"/>
+      <Range num="11.2" type="continuous" minimum="8" maximum="231" name="Color combi1"/>
+      <Range num="11.3" type="continuous" minimum="232" maximum="255" name="Color Jump"/>
+    </Input>
+    <Input num="12" name="Color speed">
+      <Range num="12.1" type="continuous" minimum="0" maximum="255" name="COL SPEED"/>
+    </Input>
+    <Input num="13" name="Mode">
+      <Range num="13.1" type="continuous" minimum="0" maximum="142" name="Auto"/>
+      <Range num="13.2" type="continuous" minimum="143" maximum="200" name="Sound1"/>
+    </Input>
+    <Input num="14" name="Reset">
+      <Range num="14.1" type="continuous" minimum="0" maximum="149" name="Reset-UnusedLOW"/>
+      <Range num="14.2" type="continuous" minimum="150" maximum="200" name="Reset"/>
+      <Range num="14.3" type="continuous" minimum="201" maximum="255" name="Reset-UnusedHIGH"/>
+    </Input>
+    <Preset name="**BLACKOUT**" title="Blackout" description="full blackout : rvbw and dimmer to zero">
+      <Set input="6" value="0" description="set dimming to zero"/>
+      <Set input="7" value="0" description="red"/>
+      <Set input="8" value="0" description="green"/>
+      <Set input="9" value="0" description="blue"/>
+      <Set input="10" value="0" description="white"/>
+      <Set input="12" value="0" description="color speed"/>
+
+    </Preset>
+  </Fixture>
+
+  
+  <Fixture id="THOMANNLEDPOTSTROBE100-3CHAN" name="LED Pot Strobe 100 3Channel" manufacturer="Thomann" ref="" language="us" version="20161031">
+
+    <Input num="1" name="Dimmer">
+      <Range num="1.1" name="Dimmer" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="2" name="Mode">
+      <Range num="2.1" name="No function" type="discret" minimum="0" maximum="0" />
+      <Range num="2.2" name="Program speed" type="continuous"   minimum="1" maximum="127" />
+      <Range num="2.3" name="Sentivity sound" type="continuous" minimum="128" maximum="255" />
+    </Input>
+  
+    <Input num="3" name="Effect">
+      <Range num="3.1" name="No function" type="discret" minimum="0" maximum="1" />
+      <Range num="3.2" name="Frequency" type="continuous"   minimum="2" maximum="255" />
+    </Input>
+  
+  </Fixture>
+      
+      
+  <Fixture id="STAIRPAR36LED" name="Par36 Led DMX" manufacturer="Stairville" ref="" language="us" version="20140611">
+    <Input num="1" name="Mode">
+      <Range num="1.1" name="RGB Control" type="discret" minimum="0" maximum="63" />
+      <Range num="1.2" name="7col Fade" type="continuous"   minimum="64" maximum="127" />
+      <Range num="1.3" name="8col Change" type="continuous" minimum="128" maximum="191" />
+      <Range num="1.4" name="3col Change" type="continuous" minimum="192" maximum="255" />
+    </Input>
+    <Input num="2" name="RED">
+      <Range num="2.1" name="Red intensity" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="3" name="GREEN">
+      <Range num="3.1" name="Green intensity" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="4" name="BLUE">
+      <Range num="4.1" name="Blue intensity" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="5" name="Speed">
+      <Range num="5.1" name="Speed" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Preset name="**BLACKOUT**" title="Blackout" description="full blackout : mode to RGB, RGB to zero">
+      <Set input="1" value="0" description="mode to RGB"/>
+      <Set input="2" value="0" description="red"/>
+      <Set input="3" value="0" description="green"/>
+      <Set input="4" value="0" description="blue"/>
+    </Preset>
+    <Preset name="**RED**" title="RED" description="Full RED">
+      <Set input="1" value="0" description="mode to RGB"/>
+      <Set input="2" value="255" description="red"/>
+      <Set input="3" value="0" description="green"/>
+      <Set input="4" value="0" description="blue"/>
+    </Preset>
+    <Preset name="**GREEN**" title="GREEN" description="full Green">
+      <Set input="1" value="0" description="mode to RGB"/>
+      <Set input="2" value="0" description="red"/>
+      <Set input="3" value="255" description="green"/>
+      <Set input="4" value="0" description="blue"/>
+    </Preset>
+
+    <Preset name="**BLUE**" title="BLUE" description="full Blue">
+      <Set input="1" value="0" description="mode to RGB"/>
+      <Set input="2" value="0" description="red"/>
+      <Set input="3" value="0" description="green"/>
+      <Set input="4" value="255" description="blue"/>
+    </Preset>
+
+  
+  </Fixture>
+
+  <Fixture id="VarytecEasyScanXTMini" name="Easy Scan XT Mini" manufacturer="Varytec" ref="" language="us" version="20150605">
+    <Input num="1" name="Pan">
+      <Range num="1.1" name="Pan" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="2" name="Tilt">
+      <Range num="2.1" name="Tilt" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="3" name="Strobe">
+      <Range num="3.1" name="Blackout" type="continuous" minimum="0" maximum="7" />
+      <Range num="3.2" name="Open" type="continuous" minimum="8" maximum="15" />
+      <Range num="3.3" name="Slow-Fast" type="continuous" minimum="16" maximum="131" />
+      <Range num="3.4" name="Open" type="continuous" minimum="132" maximum="139" />
+      <Range num="3.5" name="Slow open-Fast close" type="continuous" minimum="140" maximum="181" />
+      <Range num="3.6" name="Open" type="continuous" minimum="182" maximum="189" />
+      <Range num="3.7" name="Fast Open-Slow Close" type="continuous" minimum="190" maximum="231" />
+      <Range num="3.8" name="Open" type="continuous" minimum="231" maximum="239" />
+      <Range num="3.9" name="Random" type="continuous" minimum="240" maximum="247" />
+      <Range num="3.10" name="Open" type="continuous" minimum="248" maximum="255" />
+      <Range num="3.11" name="Follies Pink" type="continuous" minimum="78" maximum="85" />
+      <Range num="3.12" name="LAvandelBlau" type="continuous" minimum="86" maximum="92" />
+    </Input>
+    <Input num="4" name="Gobo">
+      <Range num="4.1" name="Open" type="discret" minimum="0" maximum="7" />
+      <Range num="4.2" name="Gobo 1" type="discret" minimum="8" maximum="14" />
+      <Range num="4.3" name="Gobo 2" type="discret" minimum="15" maximum="21" />
+      <Range num="4.4" name="Gobo 3" type="discret" minimum="22" maximum="28" />
+      <Range num="4.5" name="Gobo 4" type="discret" minimum="29" maximum="35" />
+      <Range num="4.6" name="Gobo 5" type="discret" minimum="36" maximum="42" />
+      <Range num="4.7" name="Gobo 6" type="discret" minimum="43" maximum="49" />
+      <Range num="4.8" name="Gobo 7" type="discret" minimum="50" maximum="56" />
+      <Range num="4.9" name="Gobo 8" type="discret" minimum="57" maximum="63" />
+      <Range num="4.10" name="Open Shake" type="discret" minimum="64" maximum="71" />
+      <Range num="4.11" name="Gobo 1 Shake" type="discret" minimum="72" maximum="78" />
+      <Range num="4.12" name="Gobo 2 Shake" type="discret" minimum="79" maximum="85" />
+      <Range num="4.13" name="Gobo 3 Shake" type="discret" minimum="86" maximum="92" />
+      <Range num="4.14" name="Gobo 4 Shake" type="discret" minimum="93" maximum="99" />
+      <Range num="4.15" name="Gobo 5 Shake" type="discret" minimum="100" maximum="106" />
+      <Range num="4.16" name="Gobo 6 Shake" type="discret" minimum="107" maximum="113" />
+      <Range num="4.17" name="Gobo 7 Shake" type="discret" minimum="114" maximum="120" />
+      <Range num="4.18" name="Gobo 8 Shake" type="discret" minimum="121" maximum="127" />
+      <Range num="4.19" name="Gobo Speed" type="continuous" minimum="128" maximum="255" />
+    </Input>
+    <Input num="5" name="Dimmer">
+      <Range num="5.1" name="Dimmer" type="continuous" minimum="0" maximum="255" />
+    </Input>
+  </Fixture>
+
+
+  <Fixture id="ADJJELLYFISH3" name="Jelly Fish (DMX3)" manufacturer="American DJ" ref="" language="us" version="20140611">
+    <Input num="1" name="Mode" >
+      <Range num="1.1" name="OFF" type="discret" minimum="0" maximum="0"/>
+      <Range num="1.2" name="Color" type="discret" minimum="10" maximum="119" />
+      <Range num="1.3" name="Chase" type="discret" minimum="120" maximum="239" />
+      <Range num="1.4" name="Sound" type="discret" minimum="240" maximum="255" />
+    </Input>
+    <Input num="2" name="Color/Chase type">
+      <Range num="2.1" name="Color/Chase type" type="continuous" minimum="0" maximum="255" />
+      <Range num="2.2" name="Col. OFF" type="discret" minimum="0" maximum="15"/>
+      <Range num="2.20" name="Chase. OFF" type="discret" minimum="0" maximum="9"/>
+    </Input>
+    <Input num="3" name="Speed">
+      <Range num="3.1" name="Speed" type="continuous" minimum="0" maximum="255" />
+    </Input>
+  </Fixture>
+
+  <Fixture id="STAIRDJLASE150RGY" name="Laser Stairville 150 RGY" manufacturer="" ref="" language="us" version="20140611">
+    <Input num="1" name="Function">
+      <Range num="1.1" name="Off" type="discret" minimum="0" maximum="50" />
+      <Range num="1.2" name="DMX Pattern" type="discret" minimum="51" maximum="101" />
+      <Range num="1.3" name="EDit Show" type="discret" minimum="102" maximum="152" />
+      <Range num="1.4" name="RUN Show Auto" type="discret" minimum="153" maximum="203" />
+      <Range num="1.5" name="RUN Show Music" type="discret" minimum="204" maximum="255" />
+    </Input>
+    <Input num="2" name="Pattern A">
+      <Range num="2.1" name="Pattern A" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="3" name="Pattern B">
+      <Range num="3.1" name="Pattern B" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="4" name="Pattern C">
+      <Range num="4.1" name="Pattern C" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="5" name="Pattern D">
+      <Range num="5.1" name="Pattern D" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="6" name="MultiFunction channel">
+      <Range num="6.1" name="All pattern control" type="continuous" minimum="0" maximum="51" />
+      <Range num="6.2" name="Pattern control A" type="continuous" minimum="52" maximum="103" />
+      <Range num="6.3" name="Pattern control B" type="continuous" minimum="104" maximum="155" />
+      <Range num="6.4" name="Pattern control C" type="continuous" minimum="156" maximum="207" />
+      <Range num="6.5" name="Pattern control D" type="continuous" minimum="208" maximum="255" />
+    </Input>
+    <Input num="7" name="Rotation effect">
+      <Range num="7.1" name="angle adjust." type="continuous" minimum="1" maximum="127" />
+      <Range num="7.2" name="counter clockwise rotation" type="continuous" minimum="128" maximum="191" />
+      <Range num="7.3" name="clockwise rotation" type="continuous" minimum="192" maximum="255" />
+    </Input>
+    <Input num="8" name="Vert. turning">
+      <Range num="8.1" name="Vert. rot. linear adj." type="continuous" minimum="1" maximum="127" />
+      <Range num="8.2" name="Vert. rot. speed adj." type="continuous" minimum="128" maximum="255" />
+    </Input>
+    <Input num="9" name="Horiz. turning">
+      <Range num="9.1" name="Horiz. rot. linear adj." type="continuous" minimum="1" maximum="127" />
+      <Range num="9.2" name="Horiz. rot. speed adj." type="continuous" minimum="128" maximum="255" />
+    </Input>
+    <Input num="10" name="Moving">
+      <Range num="10.1" name="Horiz. moving speed" type="continuous" minimum="1" maximum="127" />
+      <Range num="10.2" name="Vert. moving speed" type="continuous" minimum="128" maximum="255" />
+    </Input>
+    <Input num="11" name="Gradual drawing/Point">
+      <Range num="11.1" name="Gradual draw inc. +SPD" type="continuous" minimum="0" maximum="41" />
+      <Range num="11.2" name="Gradual draw dec. +SPD" type="continuous" minimum="42" maximum="83" />
+      <Range num="11.3" name="Gradual draw inc/dec +SPD" type="continuous" minimum="84" maximum="127" />
+      <Range num="11.4" name="Point drawing +SPD" type="continuous" minimum="128" maximum="255" />
+    </Input>
+    <Input num="12" name="Vertical angle">
+      <Range num="12.1" name="Vertical angle +SPD" type="continuous" minimum="1" maximum="255" />
+    </Input>
+    <Input num="13" name="Horizontal angle">
+      <Range num="13.1" name="Horizontal angle +SPD" type="continuous" minimum="1" maximum="255" />
+    </Input>
+    <Input num="14" name="Zoom">
+      <Range num="14.1" name="pattern size adj. +SPD" type="continuous" minimum="1" maximum="127" />
+      <Range num="14.2" name="pattern small to big +SPD" type="continuous" minimum="128" maximum="169" />
+      <Range num="14.3" name="pattern big to small +SPD" type="continuous" minimum="170" maximum="211" />
+      <Range num="14.4" name="zoom patterns" type="continuous" minimum="212" maximum="255" />
+    </Input>
+    <Input num="15" name="color effect/speed (SPD)">
+      <Range num="15.1" name="Color/Speed" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="16" name="Speed adj. (SPD)">
+      <Range num="16.1" name="Speed adj. (SPD)" type="continuous" minimum="0" maximum="255" />
+    </Input>
+  </Fixture>
+
+  <Fixture id="STAIRDJLASE150RGYMKIII" name="DJLase 150-RGY MK-III" manufacturer="StairVille" ref="" language="us" version="20140611">
+    <Input num="1" name="Function">
+      <Range num="1.1" name="Auto R-G-Y" type="discret" minimum="0" maximum="29" />
+      <Range num="1.2" name="Auto RED" type="discret" minimum="30" maximum="59" />
+      <Range num="1.3" name="Auto GREEN" type="discret" minimum="60" maximum="89" />
+      <Range num="1.4" name="Auto YELLOW" type="discret" minimum="90" maximum="119" />
+      <Range num="1.5" name="Sound R-G-Y" type="discret" minimum="120" maximum="149" />
+      <Range num="1.6" name="Sound RED" type="discret" minimum="150" maximum="179" />
+      <Range num="1.7" name="Sound GREEN" type="discret" minimum="180" maximum="209" />
+      <Range num="1.8" name="Sound YELLOW" type="discret" minimum="210" maximum="239" />
+      <Range num="1.9" name="Sound DMX" type="discret" minimum="240" maximum="255" />
+    </Input>
+    <Input num="2" name="Pattern">
+      <Range num="2.1" name="Pattern 1" type="discret" minimum="0" maximum="7" />
+      <Range num="2.2" name="Pattern 2" type="discret" minimum="8" maximum="15" />
+      <Range num="2.3" name="Pattern 3" type="discret" minimum="16" maximum="23" />
+      <Range num="2.4" name="Pattern 4" type="discret" minimum="24" maximum="31" />
+      <Range num="2.5" name="Pattern 5" type="discret" minimum="32" maximum="39" />
+      <Range num="2.6" name="Pattern 6" type="discret" minimum="40" maximum="47" />
+      <Range num="2.7" name="Pattern 7" type="discret" minimum="48" maximum="55" />
+      <Range num="2.8" name="Pattern 8" type="discret" minimum="56" maximum="63" />
+      <Range num="2.9" name="Pattern 9" type="discret" minimum="64" maximum="71" />
+      <Range num="2.10" name="Pattern 10" type="discret" minimum="72" maximum="79" />
+      <Range num="2.11" name="Pattern 11" type="discret" minimum="80" maximum="87" />
+      <Range num="2.12" name="Pattern 12" type="discret" minimum="88" maximum="95" />
+      <Range num="2.13" name="Pattern 13" type="discret" minimum="96" maximum="103" />
+      <Range num="2.14" name="Pattern 14" type="discret" minimum="104" maximum="111" />
+      <Range num="2.15" name="Pattern 15" type="discret" minimum="112" maximum="119" />
+      <Range num="2.16" name="Pattern 16" type="discret" minimum="120" maximum="127" />
+      <Range num="2.17" name="Pattern 17" type="discret" minimum="128" maximum="135" />
+      <Range num="2.18" name="Pattern 18" type="discret" minimum="136" maximum="143" />
+      <Range num="2.19" name="Pattern 19" type="discret" minimum="144" maximum="151" />
+      <Range num="2.20" name="Pattern 20" type="discret" minimum="152" maximum="159" />
+      <Range num="2.21" name="Pattern 21" type="discret" minimum="160" maximum="167" />
+      <Range num="2.22" name="Pattern 22" type="discret" minimum="168" maximum="175" />
+      <Range num="2.23" name="Pattern 23" type="discret" minimum="176" maximum="183" />
+      <Range num="2.24" name="Pattern 24" type="discret" minimum="184" maximum="191" />
+      <Range num="2.25" name="Pattern 25" type="discret" minimum="192" maximum="199" />
+      <Range num="2.26" name="Pattern 26" type="discret" minimum="200" maximum="207" />
+      <Range num="2.27" name="Pattern 27" type="discret" minimum="208" maximum="215" />
+      <Range num="2.28" name="Pattern 28" type="discret" minimum="216" maximum="223" />
+      <Range num="2.29" name="Pattern 29" type="discret" minimum="224" maximum="231" />
+      <Range num="2.30" name="Pattern 30" type="discret" minimum="232" maximum="239" />
+      <Range num="2.31" name="Pattern 31" type="discret" minimum="240" maximum="247" />
+      <Range num="2.32" name="Pattern 32" type="discret" minimum="248" maximum="255" />
+    </Input>
+    <Input num="3" name="Color selection">
+      <Range num="3.1" name="Laser OFF" type="discret" minimum="0" maximum="24" />
+      <Range num="3.2" name="Preset colour mix" type="discret" minimum="25" maximum="49" />
+      <Range num="3.3" name="Red" type="discret" minimum="50" maximum="74" />
+      <Range num="3.4" name="Green" type="discret" minimum="75" maximum="99" />
+      <Range num="3.5" name="Yellow" type="discret" minimum="100" maximum="124" />
+      <Range num="3.6" name="Red and Green" type="discret" minimum="125" maximum="149" />
+      <Range num="3.7" name="Green and Yellow" type="discret" minimum="150" maximum="174" />
+      <Range num="3.8" name="Red and Yellow" type="discret" minimum="175" maximum="199" />
+      <Range num="3.9" name="Red, Green and Yellow" type="discret" minimum="200" maximum="224" />
+      <Range num="3.10" name="Auto change" type="discret" minimum="225" maximum="255" />
+    </Input>
+    <Input num="4" name="Speed color change">
+      <Range num="4" name="Color Spd" type="continuous" minimum="0" maximum="255"/>
+      <Range num="4.1" name="No change" type="discret" minimum="0" maximum="4" />
+      <Range num="4.2" name="inc. Speed" type="continuous" minimum="5" maximum="255"/>
+    </Input>
+    <Input num="5" name="Zoom">
+      <Range num="5" name="Zoom" type="continuous" minimum="0" maximum="255"/>
+      <Range num="5.1" name="Fixed zoom" type="continuous" minimum="0" maximum="127" />
+      <Range num="5.2" name="Zoom-In" type="continuous" minimum="128" maximum="169" />
+      <Range num="5.3" name="Zoom-Out" type="continuous" minimum="170" maximum="209" />
+      <Range num="5.4" name="Zoom-In-Out" type="continuous" minimum="210" maximum="255" />
+    </Input>
+    <Input num="6" name="X move">
+      <Range num="6" name="X move" type="continuous" minimum="0" maximum="255"/>
+      <Range num="6.1" name="Fixed X" type="continuous" minimum="0" maximum="127" />
+      <Range num="6.2" name="Clockwise X" type="continuous" minimum="128" maximum="191" />
+      <Range num="6.3" name="Counter Clockwise X" type="continuous" minimum="192" maximum="255" />
+    </Input>
+    <Input num="7" name="Y move">
+      <Range num="7" name="Y move" type="continuous" minimum="0" maximum="255"/>
+      <Range num="7.1" name="Fixed Y" type="continuous" minimum="0" maximum="127" />
+      <Range num="7.2" name="Clockwise Y" type="continuous" minimum="128" maximum="191" />
+      <Range num="7.3" name="Counter Clockwise Y" type="continuous" minimum="192" maximum="255" />
+    </Input>
+
+    <Input num="8" name="Y rolling">
+      <Range num="8.1" name="Fixed Y-roll" type="continuous" minimum="0" maximum="127" />
+      <Range num="8.2" name="Clockwise Y-roll" type="continuous" minimum="128" maximum="191" />
+      <Range num="8.3" name="Counter Clockwise Y-roll" type="continuous" minimum="192" maximum="255" />
+    </Input>
+    <Input num="9" name="X rolling">
+      <Range num="9.1" name="Fixed X-roll" type="continuous" minimum="0" maximum="127" />
+      <Range num="9.2" name="Clockwise X-roll" type="continuous" minimum="128" maximum="191" />
+      <Range num="9.3" name="Counter Clockwise X-roll" type="continuous" minimum="192" maximum="255" />
+    </Input>
+    <Input num="10" name="Z rolling">
+      <Range num="10.1" name="Fixed Z-roll" type="continuous" minimum="0" maximum="127" />
+      <Range num="10.2" name="Clockwise Z-roll" type="continuous" minimum="128" maximum="191" />
+      <Range num="10.3" name="Counter Clockwise Z-roll" type="continuous" minimum="192" maximum="255" />
+    </Input>
+  </Fixture>
+
+  <Fixture id="IBIZAMUSHLED" name="Mushroom LED" manufacturer="Ibiza light" language="us" ref="15-1084" version="20140611">
+    <Input num="1" name="Fonction moteur">
+      <Range num="1.1" name="Pos. (+CH2)" type="continuous" minimum="0" maximum="15" />
+      <Range num="1.2" name="Pos A/R" type="continuous" minimum="16" maximum="255" />
+    </Input>
+    <Input num="2" name="Vitess/Position">
+      <Range num="2.1" name="Vitesse/Position 0-170°" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="3" name="On/Off/Strobo">
+      <Range num="3.1" name="Off" type="discret" minimum="0" maximum="7" />
+      <Range num="3.2" name="Strobo speed" type="continuous" minimum="7" maximum="232" />
+      <Range num="3.3" name="On" type="discret" minimum="233" maximum="255" />
+    </Input>
+    <Input num="4" name="Strobo space %">
+      <Range num="4.1" name="Strobo space %" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="5" name="Fixed Color/Shade">
+      <Range num="5.1" name="Dimmer activate" type="continuous" minimum="0" maximum="17" />
+      <Range num="5.2" name="R+G+B" type="continuous" minimum="18" maximum="34" />
+      <Range num="5.3" name="Red" type="continuous" minimum="35" maximum="51" />
+      <Range num="5.4" name="Green" type="continuous" minimum="52" maximum="68" />
+      <Range num="5.5" name="Blue" type="continuous" minimum="69" maximum="85" />
+      <Range num="5.6" name="Yellow" type="continuous" minimum="86" maximum="102" />
+      <Range num="5.7" name="Magenta" type="continuous" minimum="103" maximum="119" />
+      <Range num="5.8" name="Cyan" type="continuous" minimum="120" maximum="136" />
+      <Range num="5.9" name="Red shade" type="continuous" minimum="137" maximum="153" />
+      <Range num="5.10" name="Green shade" type="continuous" minimum="154" maximum="170" />
+      <Range num="5.11" name="Blue shade" type="continuous" minimum="171" maximum="187" />
+      <Range num="5.12" name="White shade" type="continuous" minimum="188" maximum="204" />
+      <Range num="5.13" name="Color shade" type="continuous" minimum="205" maximum="221" />
+      <Range num="5.14" name="RGB swat change" type="continuous" minimum="222" maximum="238" />
+      <Range num="5.15" name="RGB shade" type="continuous" minimum="239" maximum="255" />
+    </Input>
+    <Input num="6" name="Dimmer Red / Shade Speed">
+      <Range num="6.1" name="Dimmer Red / Shade Speed" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="7" name="Dimmer Green">
+      <Range num="7.1" name="Dimmer Green" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="8" name="Dimmer Blue">
+      <Range num="8.1" name="Dimmer Blue" type="continuous" minimum="0" maximum="255" />
+    </Input>
+    <Input num="9" name="Mode Auto/Sound">
+      <Range num="9.1" name="Off" type="discret" minimum="0" maximum="19" />
+      <Range num="9.2" name="Auto mode 1" type="continuous" minimum="20" maximum="39" />
+      <Range num="9.3" name="Auto mode 2" type="continuous" minimum="40" maximum="59" />
+      <Range num="9.4" name="Auto mode 3" type="continuous" minimum="60" maximum="79" />
+      <Range num="9.5" name="Auto mode 4" type="continuous" minimum="80" maximum="99" />
+      <Range num="9.6" name="Auto mode 5" type="continuous" minimum="100" maximum="119" />
+      <Range num="9.7" name="Auto mode 6" type="continuous" minimum="120" maximum="139" />
+      <Range num="9.8" name="Sound - White strobe" type="continuous" minimum="140" maximum="159" />
+      <Range num="9.9" name="Sound - Red strobe" type="continuous" minimum="160" maximum="179" />
+      <Range num="9.10" name="Sound - Green strobe" type="continuous" minimum="180" maximum="199" />
+      <Range num="9.11" name="Sound - Blue strobe" type="continuous" minimum="200" maximum="219" />
+      <Range num="9.12" name="Sound mode 5" type="continuous" minimum="220" maximum="239" />
+      <Range num="9.13" name="Sound 7 colors change" type="continuous" minimum="240" maximum="255" />
+    </Input>
+  </Fixture>
+
+
+</FixturesDatabase>

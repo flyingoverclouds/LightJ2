@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="SableFin.LightJ2.LightJConsole.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SableFin.LightJ2.LightJConsole"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    Loaded="Page_Loaded">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="SurfaceControleStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="butHamburger" Grid.Column="0" Content="=" Height="60" Width="60" FontSize="36" HorizontalAlignment="Left" VerticalAlignment="Top" Click="butHamburger_Click" Foreground="White" Background="#FF205020" />
+            <TextBlock Grid.Column="0" FontSize="40" FontWeight="SemiBold" HorizontalAlignment="Left" Margin="70,-3,0,0" TextWrapping="Wrap" Text="LightJ" VerticalAlignment="Top" FontFamily="Global User Interface" Style="{StaticResource PageHeaderTextStyle}"/>
+            <TextBlock Grid.Column="0" FontSize="18" HorizontalAlignment="Left" Margin="70,28,0,0" TextWrapping="Wrap" Text="Ultimate Edition Preview" VerticalAlignment="Top" Style="{StaticResource PageSubheaderTextStyle}"/>
+            <StackPanel  Grid.Column="2" x:Name="stkPageSelector" Orientation="Horizontal" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="4">
+            </StackPanel>
+            <Rectangle Fill="LightGray" Grid.ColumnSpan="2"  Grid.Column="1" Height="1" VerticalAlignment="Bottom"/>
+        </Grid>
+        <SplitView Grid.Row="1" x:Name="svMenu" DisplayMode="Overlay" IsPaneOpen="False" Margin="0">
+            <SplitView.Pane>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" >
+                        <Button x:Name="butStartArtnetPoll" Content="START ArtNetPoll" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" FontSize="20" Click="butSenArtnetPoll_Click"/>
+                        <Button x:Name="butStopArtnetPoll" Content="STOP ArtNetPoll" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" FontSize="20" Click="butStopArtnetPoll_Click"/>
+                        <!--<ListBox x:Name="lstArtnetDevices">
+                        </ListBox>-->
+                        <!--<Button x:Name="butSendArtnetDmx" Content="SEND TEST ArtnetDMX" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left"  FontSize="20"  Click="butSendArtnetDmx_Click"/>-->
+                        <Rectangle StrokeThickness="1" Stroke="DarkGray" Fill="DarkGray" Height="1" Margin="5"/>
+                    </StackPanel>
+                    <!--<StackPanel Grid.Row="1">
+                        <TextBlock Text="[X] youraccount@outlook.fr XXXXXXXXXX" Foreground="Black" FontSize="20" TextTrimming="CharacterEllipsis"/>
+                        <Button Content="Disconnect" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" FontSize="20" IsEnabled="False"/>
+                        <Button Content="Connect" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" FontSize="20"/>
+                        <Button Content="[(X)] Settings" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" FontSize="20"/>
+                    </StackPanel>-->
+                </Grid>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid Margin="10,15,10,10" x:Name="grdConsoleArea">
+
+                </Grid>
+            </SplitView.Content>
+        </SplitView>
+       
+    </Grid>
+
+</Page>

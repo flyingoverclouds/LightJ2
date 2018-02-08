@@ -1,0 +1,50 @@
+﻿description fonctionnelle des controles de surface :
+====================================================
+
+une valeur DMX correspond à l'émission de cette valeur sur un canal donnés
+Les etats des controles peuvent emettre une ou plusieur valeur DMX (un meme controle peut donc affecter plusieur fixture)
+
+OnOff :
+-------
+	Bouton à 2 etats (ON / OFF) pouvant emettre 2 valeur DMX (ON ou OFF) en fonction de son état. 
+	La valeur OFF est facultative.
+	Il faut une pression pour inverser l'etat ( push : ON->OFF, push : OFF-> ON)
+	En cas de valeur DMX unique , lorsque le channel DMX reçoit la valeur ON , l'aspect visuel du bouton passe à l'état "ON". 
+	Sinon en cas de valeur multiple ou de reception de tout autre valeur il prend l'apparence de l'etat OFF (sans reemetre la/les valeur OFF)
+
+Push :
+------
+	Bouton pressoir pouvant émettre 2 valeurs DMX (PRESSED ou RELEASED)  en fonction de son etat (enfoncé / pas enfoncé).
+	La valeur RELEASED est facultative.
+	En cas de valeur DMX unique, lorsque le channel DMX recoit la valeur PRESSED, l'aspect visuel du bouton passe à l'etat "PRESSED" (sans emission des données)
+	Sinon en cas de valeur multiple ou de reception de tout autre valeur, il prend l'apparence de l'état RELEASED (sans reemetre les données)
+
+VerticalSlider :
+----------------
+	Slider vertical éméttant une valeur borné (MIN , MAX) lors de son déplacement. 
+	en cas de binding multiple la même valeur est émise sur tout les canaux. 
+	en cas de binding unique, la reception d'une valeur le canal DMX bindé ET antre les bornes MIN MAX entraine la mise à jour de la position du curseur. 
+	La réception de tout autre valeur hors borns, ou en cas de binding multiple ne déclenche aucune synchronisation.
+
+HorizontalSlider : 
+------------------
+	idem que VerticalSlider mais avec une representation horizontale.
+
+LcdDisplay : INCOMPLET
+------------
+	afficheur LCD à 3 ligne permettant l'affichage d'information en fonction des controles de surfaces manipulés et de leurs configurations
+	
+
+Joystick : NOT IMPLEMENTED
+----------
+	Dans le principe équivaut à un slider horizontal et un slider vertical couplé et piloté simultanément.
+
+
+RGBWheelSelector: NOT IMPLEMENTED
+-----------------
+	Control permettant la selection d'une couleur dans une roue coloré et emettant 3 valeurs ( RED, GREEN, BLUE) de 0 à 255.
+	Chaque valeur peut etre bindé sur plusieur canaux DMX permettant de piloter simultanément différent fixtures
+
+
+
+

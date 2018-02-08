@@ -1,0 +1,53 @@
+﻿<UserControl
+    x:Class="SableFin.LightJ2.SurfaceControls.TouchBpmArea"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SableFin.LightJ2.SurfaceControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="150"
+    d:DesignWidth="200">
+    
+    <Grid>
+        <Viewbox>
+        <Grid MinHeight="80" MinWidth="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border x:Name="bdrTouchArea" Background="#FF101020" BorderBrush="LightGray" BorderThickness="1" 
+                PointerPressed="Border_PointerPressed" PointerReleased="Border_PointerReleased" Grid.ColumnSpan="2">
+                <Border IsHitTestVisible="false">
+                    <Grid>
+                        <Rectangle VerticalAlignment="Top" HorizontalAlignment="Stretch"  Height="20">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                                    <GradientStop Color="#FFB71802"/>
+                                    <GradientStop Color="#FF38FC01" Offset="1"/>
+                                    <GradientStop Color="#FF8C2101" Offset="0.261"/>
+                                    <GradientStop Color="#FFBB7921" Offset="0.698"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+
+                        <ProgressBar x:Name="pgReliability" Minimum="0" Maximum="10" VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="20" Value="10" RenderTransformOrigin="0.5,0.5" Background="Transparent" Foreground="Black" >
+                            <ProgressBar.RenderTransform>
+                                <CompositeTransform ScaleX="-1"/>
+                            </ProgressBar.RenderTransform>
+
+                        </ProgressBar>
+                        <TextBlock x:Name="txbBpm" Text="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+                    </Grid>
+                </Border>
+            </Border>
+            <Button Click="butBpmDec_Click" x:Name="butBpmDec" Content="-1" Grid.Row="1" Grid.Column="0" Height="40"  HorizontalAlignment="Stretch" FontSize="25" Foreground="Gray" Padding="0" />
+            <Button Click="butBpmInc_Click" x:Name="butBpmInc" Content="+1" Grid.Row="1" Grid.Column="1" Height="40"  HorizontalAlignment="Stretch" FontSize="25" Foreground="Gray" Padding="0"/>
+        </Grid>
+        </Viewbox>
+    </Grid>
+</UserControl>
