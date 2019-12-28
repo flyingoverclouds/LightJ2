@@ -2,6 +2,10 @@
 Fully configurable Light jockey UWP application written using C# and Visual Studio 2017 - OpenDMX and ArtNet support
 Application has been designed for a touch screen with 10 touch point. Less touch points reduce useability of the LJing surface.
 
+![Main Screen](./doc/LightJ_Main_screen.jpg)
+
+!['Lyre' fixture scren](./doc/LightJ_Lyre_screen.jpg)
+
 # Documentation
 need more time ... to write it !
 Look at XML files in Data folders for configuration your own LJing surface.
